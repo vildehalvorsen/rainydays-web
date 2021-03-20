@@ -1,0 +1,141 @@
+/*Global styling*/
+
+body {
+    font-family: "fira-sans-condensed-2", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 0px;
+}
+
+.logo {
+    font-family: "ropa-soft-pro", sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+h1,
+h2 {
+    font-family: "Prohibition", "fira-sans-compressed", "ropa-soft-pro", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    color: #2F4159;
+}
+
+header,
+footer {
+    background-color: #2F4159;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+
+/*Links*/
+
+a {
+    text-decoration: none;
+}
+
+header a {
+    color: #FFF;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0px 50px;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+
+/*Home page*/
+
+.headertop {
+    background-image: url(/images/Home-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 20%;
+    min-height: 80vh;
+    position: relative;
+    display: flex;
+}
+
+.headertop_content {
+    display: flex;
+    flex-direction: column;
+    grid-column: auto 1fr;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    text-align: center;
+    max-width: 650px;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+p {
+    font-size: 1.1em;
+    margin: 0px;
+}
+
+.explore_btn_space {
+    margin: 5%;
+}
+
+.explore_btn {
+    background-color: #2F4159;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 10px 40px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.explore_btn:hover {
+    background-color: #F45A26;
+}
+
+.featured {
+    background-color: #C7E6F1;
+    margin-top: 0px;
+    padding: 40px 0px;
+}
+
+.featured-jackets {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.featured h2 {
+    display: grid;
+    text-align: center;
+    font-size: 3em;
+    padding: 40px;
+    margin: 0px;
+    border-top: 20px solid #2F4159;
+}
+
+.featured img {
+    width: 250px;
+}
