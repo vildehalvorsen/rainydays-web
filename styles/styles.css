@@ -1,141 +1,271 @@
-/*Global styling*/
-
-body {
-    font-family: "fira-sans-condensed-2", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    margin: 0px;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    gap: 0px;
-}
-
-.logo {
-    font-family: "ropa-soft-pro", sans-serif;
-    font-weight: 500;
-    font-size: 2em;
-    text-transform: uppercase;
-}
-
-header {
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    align-items: center;
-    padding: 0px 10px;
-}
-
-h1,
-h2 {
-    font-family: "Prohibition", "fira-sans-compressed", "ropa-soft-pro", Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2em;
-    color: #2F4159;
-}
-
-header,
-footer {
-    background-color: #2F4159;
-    color: #fff;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-}
-
-
-/*Links*/
-
-a {
-    text-decoration: none;
-}
-
-header a {
-    color: #FFF;
-}
-
-nav li {
-    display: inline-block;
-    padding: 0px 50px;
-}
-
-.active {
-    text-decoration: underline;
-}
-
-
-/*Home page*/
-
-.headertop {
-    background-image: url(/images/Home-background.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: 20%;
-    min-height: 80vh;
-    position: relative;
-    display: flex;
-}
-
-.headertop_content {
-    display: flex;
-    flex-direction: column;
-    grid-column: auto 1fr;
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    text-align: center;
-    max-width: 650px;
-}
-
-h1 {
-    font-size: 4em;
-}
-
-p {
-    font-size: 1.1em;
-    margin: 0px;
-}
-
-.explore_btn_space {
-    margin: 5%;
-}
-
-.explore_btn {
-    background-color: #2F4159;
-    color: #fff;
-    font-size: 1.5em;
-    padding: 10px 40px;
-    border-radius: 5px;
-    text-transform: uppercase;
-}
-
-.explore_btn:hover {
-    background-color: #F45A26;
-}
-
-.featured {
-    background-color: #C7E6F1;
-    margin-top: 0px;
-    padding: 40px 0px;
-}
-
-.featured-jackets {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    grid-gap: 10px;
-    align-items: center;
-    text-align: center;
-}
-
-.featured h2 {
-    display: grid;
-    text-align: center;
-    font-size: 3em;
-    padding: 40px;
-    margin: 0px;
-    border-top: 20px solid #2F4159;
-}
-
-.featured img {
-    width: 250px;
-}
+    /*Global styling*/
+    
+    body {
+        font-family: "fira-sans-condensed-2", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        background-image: url(/images/Background-pattern.jpg);
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+        margin: 0px;
+    }
+    
+    .logo {
+        font-family: "ropa-soft-pro", sans-serif;
+        font-weight: 500;
+        font-size: 2em;
+        text-transform: uppercase;
+    }
+    
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 5px 10px;
+    }
+    
+    h1,
+    h2 {
+        font-family: "ropa-soft-pro", "prohibition", "fira-sans-compressed", "ropa-soft-pro", Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2em;
+        text-transform: uppercase;
+        color: #2F4159;
+    }
+    
+    header,
+    footer {
+        background-color: #2F4159;
+        color: #fff;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+    /*Links*/
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    header a {
+        color: #FFF;
+    }
+    
+    nav {
+        display: none;
+        position: fixed;
+        top: 42px;
+        background-color: #2F4159;
+        z-index: 1000;
+    }
+    
+    nav ul {
+        padding: 10px;
+        margin: 0px
+    }
+    
+    nav li {
+        display: inline-flex;
+        text-align: center;
+        padding: 10px 10px;
+    }
+    
+    .active {
+        background-color: rgba(173, 216, 230, 0.377);
+    }
+    /*Hamburger menu*/
+    
+    #hamburger-menu {
+        display: none;
+    }
+    
+    #hamburger-menu:checked~nav {
+        display: block;
+    }
+    /*Home page*/
+    
+    .headertop {
+        background-image: url(/images/Home-background.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: top;
+        min-height: 35vh;
+        border-bottom: 5px solid #2F4159;
+        position: relative;
+    }
+    
+    .headertop_content img {
+        display: none;
+    }
+    
+    .info {
+        max-width: 800px;
+        padding: 20px 20px;
+        margin: 10px auto;
+        text-align: center;
+        border-bottom: 2px dotted #2F4159;
+    }
+    
+    .info h1 {
+        font-size: 2em;
+    }
+    
+    .info p {
+        font-size: 1.3em;
+    }
+    
+    .reviews {
+        text-align: center;
+        padding: 0px;
+    }
+    
+    .reviews_content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .reviews_images {
+        border-radius: 50px;
+        width: 60%;
+    }
+    
+    .reviews_content p {
+        max-width: 60%;
+        margin: auto;
+        padding: 10px;
+    }
+    
+    .review_section {
+        padding-bottom: 40px;
+    }
+    
+    .names {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    /*Media queries*/
+    
+    @media all and (min-width: 600px) {
+        header {
+            justify-content: space-around;
+        }
+        .headertop_content img {
+            display: flex;
+            position: absolute;
+            width: 35%;
+            top: 70px;
+            left: 70px;
+        }
+        .info {
+            max-width: 800px;
+            padding: 50px 0px;
+            margin: 50px auto;
+            text-align: center;
+            border-bottom: 2px dotted #2F4159;
+        }
+        .reviews_images {
+            border-radius: 50px;
+            width: 40%;
+        }
+        .reviews h2 {
+            display: ;
+        }
+        nav {
+            display: none;
+            position: fixed;
+            top: 41px;
+            background-color: #2F4159;
+            z-index: 1000;
+        }
+        nav ul {
+            padding: 10px;
+            margin: 0px
+        }
+        nav li {
+            display: inline-flex;
+            text-align: center;
+            padding: 10px 30px;
+        }
+    }
+    
+    @media all and (min-width: 800px) {
+        #hamburger-menu,
+        .fa-bars {
+            display: none;
+        }
+        header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0px;
+        }
+        .logo {
+            font-family: "ropa-soft-pro", sans-serif;
+            font-weight: 500;
+            font-size: 2em;
+            text-transform: uppercase;
+            margin-right: auto;
+            padding-left: 5px;
+        }
+        .headertop {
+            background-image: url(/images/Home-background.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-x: left;
+            background-position-y: top;
+            min-height: 80vh;
+            border-bottom: 10px solid #2F4159;
+            position: relative;
+        }
+        .headertop_content img {
+            position: absolute;
+            width: 35%;
+            top: 180px;
+            left: 100px;
+        }
+        .info {
+            max-width: 800px;
+            padding: 50px 0px;
+            margin: 50px auto;
+            text-align: center;
+            border-bottom: none;
+        }
+        .info p {
+            font-size: 1.4em;
+        }
+        .reviews h2 {
+            display: none;
+        }
+        .reviews_content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .reviews_images {
+            border-radius: 50px;
+            width: 70%;
+        }
+        .review_section {
+            padding-bottom: 10px;
+        }
+        nav {
+            display: inline-block;
+            position: static;
+        }
+        nav ul {
+            padding: 10px;
+            margin: 0px
+        }
+        nav li {
+            display: inline-block;
+            text-align: center;
+            padding: 10px 20px;
+        }
+        .active {
+            background-color: rgba(173, 216, 230, 0.377);
+            padding: 22px 18px 20px;
+        }
+    }
