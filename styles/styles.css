@@ -29,7 +29,7 @@ header {
 h1,
 h2 {
     font-family: "ropa-soft-pro", "prohibition", "fira-sans-compressed", "ropa-soft-pro", Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2em;
+    font-size: 1.9em;
     text-transform: uppercase;
     color: #2F4159;
 }
@@ -102,7 +102,7 @@ nav li {
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: top;
-    min-height: 35vh;
+    min-height: 50vh;
     border-bottom: 5px solid #2F4159;
     position: relative;
 }
@@ -113,25 +113,20 @@ nav li {
 
 .info {
     max-width: 800px;
-    padding: 20px 20px;
-    margin: 10px auto;
+    padding: 10px 20px 40px;
     text-align: center;
     border-bottom: 2px dotted #2F4159;
 }
 
-.info h1 {
-    font-size: 2em;
-}
-
 .info p {
-    font-size: 1.1em;
+    font-size: 1.0em;
     max-width: 300px;
     margin: auto;
 }
 
 .reviews {
     text-align: center;
-    padding: 0px;
+    padding: 20px;
 }
 
 .reviews_content {
@@ -141,11 +136,11 @@ nav li {
 
 .reviews_images {
     border-radius: 50px;
-    width: 60%;
+    width: 50%;
 }
 
 .reviews_content p {
-    max-width: 60%;
+    max-width: 80%;
     margin: auto;
     padding: 10px;
 }
@@ -176,8 +171,8 @@ nav li {
         display: flex;
         position: absolute;
         width: 35%;
-        top: 70px;
-        left: 70px;
+        top: 25%;
+        left: 9%;
     }
     .info {
         padding: 0px 0px 50px;
@@ -222,8 +217,8 @@ nav li {
     .headertop_content img {
         position: absolute;
         width: 35%;
-        top: 180px;
-        left: 100px;
+        top: 25%;
+        left: 9%;
     }
     .info {
         padding: 50px 0px;
