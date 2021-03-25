@@ -5,7 +5,6 @@ body {
     font-weight: 800;
     font-style: normal;
     background-image: url(/images/Background-pattern.jpg);
-    display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100vh;
     margin: 0px;
@@ -119,14 +118,13 @@ nav li {
 }
 
 .info p {
-    font-size: 1.0em;
+    font-size: 1.1em;
     max-width: 300px;
     margin: auto;
 }
 
 .reviews {
     text-align: center;
-    padding: 20px;
 }
 
 .reviews_content {
@@ -136,11 +134,12 @@ nav li {
 
 .reviews_images {
     border-radius: 50px;
-    width: 50%;
+    width: 200px;
+    margin: 20px;
 }
 
 .reviews_content p {
-    max-width: 80%;
+    max-width: 40%;
     margin: auto;
     padding: 10px;
 }
@@ -164,9 +163,18 @@ nav li {
     nav li {
         padding: 10px 10px;
     }
+    .reviews {
+        padding-top: 20px;
+    }
 }
 
 @media all and (min-width: 600px) {
+    nav {
+        text-align: center;
+    }
+    nav li {
+        padding: 10px 30px;
+    }
     .headertop_content img {
         display: flex;
         position: absolute;
@@ -184,15 +192,6 @@ nav li {
     .info p {
         max-width: 500px;
     }
-    .reviews_images {
-        width: 40%;
-    }
-    nav {
-        text-align: center;
-    }
-    nav li {
-        padding: 10px 30px;
-    }
 }
 
 @media all and (min-width: 800px) {
@@ -207,6 +206,17 @@ nav li {
     .logo {
         margin-right: auto;
         padding-left: 5px;
+    }
+    nav {
+        display: inline-block;
+        position: static;
+    }
+    nav li {
+        display: inline-block;
+    }
+    .active {
+        background-color: rgba(173, 216, 230, 0.377);
+        padding: 22px 18px;
     }
     .headertop {
         background-position-x: left;
@@ -227,6 +237,7 @@ nav li {
     }
     .info p {
         font-size: 1.4em;
+        padding: 0px 30px;
         max-width: 800px;
     }
     .reviews h2 {
@@ -236,20 +247,13 @@ nav li {
         grid-template-columns: repeat(3, 1fr);
     }
     .reviews_images {
-        width: 70%;
+        width: 50%;
+        max-width: 250px;
+    }
+    .reviews_content p {
+        max-width: 60%;
     }
     .review_section {
-        padding-bottom: 10px;
-    }
-    nav {
-        display: inline-block;
-        position: static;
-    }
-    nav li {
-        display: inline-block;
-    }
-    .active {
-        background-color: rgba(173, 216, 230, 0.377);
-        padding: 22px 18px;
+        margin-bottom: 50px;
     }
 }
