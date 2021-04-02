@@ -4,9 +4,11 @@ body {
     font-family: "fira-sans-condensed-2", sans-serif;
     font-weight: 800;
     font-style: normal;
-    background-image: url(/images/Background-pattern.jpg);
+    background-image: url(/images/background-pattern-resized.jpg);
+    background-size: cover;
+    display: grid;
     grid-template-rows: auto 1fr auto;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0px;
 }
 
@@ -96,7 +98,7 @@ nav li {
 /*Home page*/
 
 .headertop {
-    background-image: url(/images/Home-background.jpeg);
+    background-image: url(/images/Home-background-resized.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: right;
