@@ -1,0 +1,168 @@
+body {
+    background-image: url(/images/about-background_opacity.jpg);
+    background-attachment: fixed;
+    min-height: 180vh;
+}
+
+h1 {
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+h3 {
+    font-weight: 900;
+}
+
+.about-content {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+}
+
+.about-info {
+    margin: 30px 0px;
+    overflow-y: scroll;
+    height: 300px;
+}
+
+.about-content img {
+    width: 150px;
+    padding: 20px;
+}
+
+.about-content p {
+    font-size: 0.9em;
+}
+
+.about-staff {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 10px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-staff h2 {
+    margin-top: 40px
+}
+
+.about-staff h3,
+p {
+    margin: 15px;
+}
+
+.about-staff img {
+    border-radius: 50%;
+    width: 50%;
+    max-width: 180px;
+    margin-top: 30px;
+}
+
+
+/*Media Queries*/
+
+@media all and (min-width: 700px) {
+    .staff-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px 0px;
+        margin: 50px 0px;
+    }
+    .about-staff img {
+        width: 65%;
+        max-width: 200px;
+        margin-top: 0px;
+    }
+    .staff-wrap h3,
+    p {
+        text-align: left;
+    }
+}
+
+@media all and (min-width: 800px) {
+    h1 {
+        display: inline-block;
+        font-size: 3em;
+        padding: 5px 20px;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .about-content {
+        background-color: rgba(255, 255, 255, 0);
+        display: inline-flex;
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+    .about-info {
+        overflow-y: visible;
+        height: auto;
+    }
+    .about-content p {
+        font-size: 1em;
+        max-width: 400px;
+        padding: 10px 0px;
+    }
+    .about-staff {
+        background-color: rgba(255, 255, 255, 0);
+        margin-top: 0px;
+        padding-bottom: 0px;
+    }
+    .about-staff h2 {
+        margin: 20px;
+    }
+    .about-staff h3,
+    p {
+        display: block;
+    }
+    .about-staff img {
+        width: 60%;
+        max-width: 280px;
+        margin-top: 0px;
+    }
+    .staff-wrap {
+        gap: 20px 0px;
+        margin: 0px;
+        padding: 50px;
+    }
+    .content-wrap {
+        background-color: rgba(255, 255, 255, 0.6);
+        text-align: center;
+    }
+    .all-content {
+        position: relative;
+        top: 100px;
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .about-content {
+        display: flex;
+        text-align: left;
+        padding: 0px 30px;
+    }
+    .about-content p {
+        max-width: 650px;
+    }
+    .about-staff img {
+        max-width: 180px;
+    }
+    .staff-wrap {
+        gap: 30px 0px;
+    }
+    .content-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .all-content {
+        width: 80%;
+    }
+}
