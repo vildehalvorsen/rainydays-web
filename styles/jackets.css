@@ -43,7 +43,12 @@ img {
     max-width: 302px;
     max-height: 428px;
     margin: 0px 50px 50px 50px;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px +20px 5px 0px rgba(0, 0, 0, 0.2);
+    transition: transform .2s;
+}
+
+.jackets:hover {
+    transform: scale(1.05);
 }
 
 .tag {
@@ -54,6 +59,8 @@ img {
 }
 
 .price {
+    color: #2f4159;
+    font-size: 1.3em;
     font-weight: 1000;
     text-align: right;
     padding: 5px;
@@ -64,11 +71,10 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     margin: 90px auto;
+    max-width: 1300px;
 }
 
-.featured a {
-    color: initial;
-}
+.jackets {}
 
 
 }
