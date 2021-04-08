@@ -1,0 +1,74 @@
+h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: "fira-sans-condensed-2", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.4em;
+    letter-spacing: 0pt;
+    text-transform: none;
+    color: #000;
+    max-width: 600px;
+    text-align: center;
+}
+
+h3 {
+    font-family: Prohibition;
+    font-size: 2em;
+    color: #2f4159;
+    letter-spacing: 1pt;
+    margin: 0px 0px 15px;
+}
+
+p {
+    margin: 0px;
+}
+
+.head-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+}
+
+img {
+    width: 300px;
+    border: 1px solid #2f4159;
+}
+
+.jackets {
+    max-width: 302px;
+    max-height: 428px;
+    margin: 0px 50px 50px 50px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tag {
+    background-color: #fff;
+    border: 1px solid #2f4159;
+    padding: 5px;
+    margin: -12px 0px;
+}
+
+.price {
+    font-weight: 1000;
+    text-align: right;
+    padding: 5px;
+}
+
+.featured {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 90px auto;
+}
+
+.featured a {
+    color: initial;
+}
+
+
+}

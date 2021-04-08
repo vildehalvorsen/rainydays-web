@@ -29,8 +29,10 @@ header {
 
 h1,
 h2 {
-    font-family: "ropa-soft-pro", "prohibition", "fira-sans-compressed", "ropa-soft-pro", Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.9em;
+    font-family: "prohibition", "ropa-soft-pro", "fira-sans-compressed", "ropa-soft-pro", Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3pt;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+    font-size: 2.5em;
     text-transform: uppercase;
     color: #2F4159;
 }
