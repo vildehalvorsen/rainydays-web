@@ -6,6 +6,7 @@ body {
     font-style: normal;
     background-image: url(/images/background-pattern-resized.jpg);
     background-size: cover;
+    background-attachment: fixed;
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
@@ -79,6 +80,10 @@ nav ul {
 nav li {
     display: inline-flex;
     padding: 10px 5px;
+}
+
+nav li:hover {
+    text-decoration: underline;
 }
 
 .active {

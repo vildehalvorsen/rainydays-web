@@ -1,80 +1,132 @@
-h1 {
-    font-size: 4em;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-family: "fira-sans-condensed-2", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 1.4em;
-    letter-spacing: 0pt;
-    text-transform: none;
-    color: #000;
-    max-width: 600px;
-    text-align: center;
-}
-
-h3 {
-    font-family: Prohibition;
-    font-size: 2em;
-    color: #2f4159;
-    letter-spacing: 1pt;
-    margin: 0px 0px 15px;
-}
-
-p {
-    margin: 0px;
-}
-
-.head-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px auto;
-}
-
-img {
-    width: 300px;
-    border: 1px solid #2f4159;
-}
-
-.jackets {
-    max-width: 302px;
-    max-height: 428px;
-    margin: 0px 50px 50px 50px;
-    box-shadow: 5px +20px 5px 0px rgba(0, 0, 0, 0.2);
-    transition: transform .2s;
-}
-
-.jackets:hover {
-    transform: scale(1.05);
-}
-
-.tag {
-    background-color: #fff;
-    border: 1px solid #2f4159;
-    padding: 5px;
-    margin: -12px 0px;
-}
-
-.price {
-    color: #2f4159;
-    font-size: 1.3em;
-    font-weight: 1000;
-    text-align: right;
-    padding: 5px;
-}
-
-.featured {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 90px auto;
-    max-width: 1300px;
-}
-
-.jackets {}
-
-
-}
+    h1 {
+        font-size: 2em;
+        text-align: center;
+        margin: 10px;
+    }
+    
+    h2 {
+        font-family: "fira-sans-condensed-2", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 0.9em;
+        letter-spacing: 0pt;
+        text-transform: none;
+        text-align: center;
+        color: #000;
+        max-width: 300px;
+    }
+    
+    .head-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px auto;
+    }
+    /*Jacket cards*/
+    
+    h3 {
+        font-family: "Prohibition";
+        font-size: 1.5em;
+        color: #2f4159;
+        letter-spacing: 1pt;
+        margin: 0px 10px;
+    }
+    
+    p {
+        font-size: 0.7em;
+        margin: 0px;
+    }
+    
+    img {
+        width: 180px;
+        border: 1px solid #2f4159;
+    }
+    
+    .jackets {
+        max-width: 182px;
+        max-height: 428px;
+        margin: 0px 30px 50px 30px;
+        box-shadow: 5px +20px 5px 0px rgba(0, 0, 0, 0.2);
+        transition: transform .2s;
+    }
+    
+    .jackets:hover {
+        transform: scale(1.05);
+    }
+    
+    .tag {
+        background-color: #fff;
+        border: 1px solid #2f4159;
+        padding: 5px;
+        margin: -12px 0px;
+    }
+    
+    .price {
+        color: #2f4159;
+        font-size: 1.3em;
+        font-weight: 1000;
+        text-align: right;
+        padding: 5px;
+    }
+    
+    .featured {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 50px auto;
+        max-width: 250px;
+    }
+    /*Media Queries*/
+    
+    @media all and (min-width:580px) {
+        h1 {
+            font-size: 3em;
+        }
+        h2 {
+            font-size: 1.15em;
+            max-width: 500px;
+        }
+        /*Jacket cards*/
+        h3 {
+            margin: 0px 0px 15px;
+        }
+        p {
+            font-size: 0.9em;
+            padding-bottom: 10px;
+        }
+        img {
+            width: 200px;
+        }
+        .jackets {
+            max-width: 202px;
+        }
+        .featured {
+            margin: 90px auto;
+            max-width: 600px;
+        }
+    }
+    
+    @media all and (min-width:900px) {
+        h1 {
+            font-size: 4em;
+        }
+        h2 {
+            font-size: 1.4em;
+            max-width: 600px;
+        }
+        /*Jacket cards*/
+        p {
+            font-size: 1.1em;
+            padding: 0px 5px 10px 0px;
+        }
+        img {
+            width: 300px;
+        }
+        .jackets {
+            max-width: 302px;
+            margin: 0px 50px 70px 40px;
+        }
+        .featured {
+            max-width: 1300px;
+        }
+    }

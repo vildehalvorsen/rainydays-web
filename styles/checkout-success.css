@@ -1,0 +1,45 @@
+.success-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+}
+
+h1 {
+    font-size: 2em;
+    letter-spacing: 0pt;
+    text-align: center;
+    padding-left: 5px;
+}
+
+p {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.fa-check {
+    display: flex;
+    font-size: 2.5em;
+    color: #288f28;
+    justify-content: center;
+}
+
+.btn {
+    margin: 50px;
+}
+
+.btn a {
+    background-color: #2f4159;
+    padding: 15px 30px;
+    border-color: 1px solid #2f4159;
+    border-radius: 5px;
+    font-family: "Prohibition";
+    font-size: 1.2em;
+    letter-spacing: 1pt;
+}
+
+.card-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20% auto;
+}

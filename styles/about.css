@@ -1,11 +1,10 @@
 body {
     background-image: url(/images/about-background_opacity.jpg);
-    background-attachment: fixed;
     min-height: 180vh;
 }
 
 h1 {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.9);
     text-align: center;
 }
 
@@ -132,7 +131,7 @@ p {
         padding: 50px;
     }
     .content-wrap {
-        background-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(255, 255, 255, 0.9);
         text-align: center;
     }
     .all-content {
