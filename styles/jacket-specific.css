@@ -15,6 +15,14 @@ h1 {
     display: none;
 }
 
+.content-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 320px;
+    margin: 50px auto 0px;
+}
+
 
 /*Images*/
 
@@ -24,6 +32,10 @@ img {
     margin: 0px 30px;
 }
 
+.sub-jackets {
+    display: flex;
+}
+
 .jackets {
     display: flex;
     overflow: scroll;
@@ -31,14 +43,14 @@ img {
 }
 
 
-/*Description*/
+/*Description, Details, Maintenance*/
 
 .description h3 {
     font-family: "ropa-soft-pro", sans-serif;
     color: #2F4159;
     font-size: 1em;
     text-align: left;
-    padding: 0px 10px;
+    padding: 0px 5px;
     margin: 5px;
 }
 
@@ -128,14 +140,6 @@ select:hover {
     top: -40px;
 }
 
-.content-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 320px;
-    margin: 50px auto 0px;
-}
-
 
 /* Media Queries*/
 
@@ -172,6 +176,9 @@ select:hover {
         opacity: 1;
         transform: scale(1.1);
     }
+    .content-wrap {
+        max-width: 470px;
+    }
     /*Images*/
     .main img {
         width: 300px;
@@ -191,11 +198,14 @@ select:hover {
     .sub img:hover {
         transform: scale(1.05);
     }
+    .sub-jackets {
+        display: block;
+    }
     .jackets {
         overflow: visible;
         max-width: 460px;
     }
-    /*Description*/
+    /*Description, Details, Maintenance*/
     .description h3 {
         font-size: 1.1em;
         padding: 0px;
@@ -228,9 +238,6 @@ select:hover {
     .dropdown a {
         padding: 10px 15px;
     }
-    .content-wrap {
-        max-width: 470px;
-    }
 }
 
 @media all and (min-width:800px) {
@@ -243,6 +250,9 @@ select:hover {
     }
     .arrow-r {
         top: 60%;
+    }
+    .content-wrap {
+        max-width: 560px;
     }
     /*Images*/
     .main img {
@@ -261,7 +271,7 @@ select:hover {
     .jackets {
         max-width: 610px;
     }
-    /*Description*/
+    /*Description, Details, Maintenance*/
     .description p {
         padding: 0px 10px;
     }
@@ -272,7 +282,7 @@ select:hover {
     /*Info*/
     .infotag {
         padding: 20px 20px 100px 20px;
-        margin-bottom: 100px;
+        margin-bottom: 200px;
         max-width: 510px;
         max-height: 130px;
     }
@@ -282,14 +292,20 @@ select:hover {
     .dropdown {
         top: -45px;
     }
-    .content-wrap {
-        max-width: 560px;
-    }
 }
 
 @media all and (min-width: 1000px) {
-    body {
-        min-height: 120vh;
+    .main-content {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 200px;
+    }
+    .content-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 0px 0px 5%;
+        max-width: 590px;
     }
     /*Images*/
     .main img {
@@ -302,7 +318,7 @@ select:hover {
     .jackets {
         margin-left: 0px;
     }
-    /*Description*/
+    /*Description, Details, Maintenance*/
     .description {
         max-width: none;
         margin: 0px;
@@ -314,18 +330,21 @@ select:hover {
         max-width: 390px;
         max-height: 267px;
     }
-    .infotag h2 {
-        font-size: 2em;
+    .price {
+        position: relative;
+        top: -30px;
     }
-    .content-wrap {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0px 0px 0px 5%;
-        max-width: 590px;
+    .dropdown {
+        top: -20px;
     }
-    .main-content {
-        display: flex;
-        justify-content: center;
+}
+
+@media all and (min-width: 1050px) {
+    .price {
+        position: initial;
+        top: initial;
+    }
+    .dropdown {
+        top: -45px;
     }
 }
