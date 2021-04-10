@@ -31,25 +31,9 @@
         </nav>
     </header>
     <main>
-        <section class="order-sum">
-            <h1>Order summary</h1>
-            <div class="summary-wrap">
-                <div class="products">
-                    <p>Products</p>
-                    <p>$169.98</p>
-                </div>
-                <div class="shp-cost">
-                    <p>Shipping cost</p>
-                    <p>$0.00</p>
-                </div>
-                <div class="total">
-                    <h2>Total Price</h2>
-                    <h2>$169.98</h2>
-                </div>
-            </div>
-        </section>
+
         <section class="shopping-bag">
-            <h1>1. Your Shooping bag</h1>
+            <h1>1. Your Shopping bag</h1>
             <div class="title">
                 <p>Product</p>
                 <p>Size</p>
@@ -66,21 +50,20 @@
                     <div class="size-drop">
                         <label for="size">Choose size:</label>
                         <select name="size" id="size" method="POST">
-                    <option value="" selected hidden>Size</option>
-                    <option value="x-small"> XS</option>
-                    <option value="small"> S</option>
-                    <option value="medium"> M</option>
-                    <option value="large"> L</option>
-                    <option value="x-large"> XL</option>
-                    </select>
+                        <option value="" selected hidden>Size</option>
+                        <option value="x-small"> XS</option>
+                        <option value="small"> S</option>
+                        <option value="medium"> M</option>
+                        <option value="large"> L</option>
+                        <option value="x-large"> XL</option>
+                        </select>
                     </div>
-
                     <div class="qty">
                         <label for="qty">Quantity</label>
                         <input type="text" id="qty" name="qty" placeholder="1">
                     </div>
                     <div class="total">
-                        <p>$79.99</p>
+                        <h3>$79.99</h3>
                     </div>
                     <div class="dlt">
                         <a href="#"><i class="fas fa-trash-alt "></i></a>
@@ -92,7 +75,7 @@
                         <h2>Rainydays 6</h2>
                         <p>A short description</p>
                     </div>
-                    <div class="size-drop ">
+                    <div class="size-drop">
                         <label for="size ">Choose size:</label>
                         <select name="size " id="size " method="POST ">
                     <option value=" " selected hidden>Size</option>
@@ -108,7 +91,7 @@
                         <input type="text" id="qty" name="qty" placeholder="1">
                     </div>
                     <div class="total">
-                        <p>$89.99</p>
+                        <h3>$89.99</h3>
                     </div>
                     <div class="dlt">
                         <a href="#"><i class="fas fa-trash-alt "></i></a>
@@ -116,56 +99,55 @@
                 </div>
             </div>
         </section>
-
         <section class="shipping-info ">
-            <h1>2. Your Shooping bag</h1>
+            <h1>2. Shipping information</h1>
             <section class="form-wrapper">
                 <form method="POST">
                     <div class="name">
                         <label for="fullname">Full name*</label>
-                        <input type="text" id="fullname" name="fullname" required>
+                        <input type="text" id="fullname" name="fullname" required placeholder="Full name *">
                     </div>
                     <div class="adr-line">
                         <div>
                             <label for="adr1">Address Line 1*</label>
-                            <input type="text" id="adr1" name="adr1" required>
+                            <input type="text" id="adr1" name="adr1" required placeholder="Address line 1 *">
                         </div>
                         <div>
                             <label for="adr2">Address Line 2</label>
-                            <input type="text" id="adr2" name="adr2">
+                            <input type="text" id="adr2" name="adr2" placeholder="Address line 2">
                         </div>
-                    </div>
                     </div>
                     <div class="cty-line">
                         <div>
                             <label for="city">City*</label>
-                            <input type="text" id="city" name="city" required>
+                            <input type="text" id="city" name="city" required placeholder="City *">
                         </div>
                         <div>
                             <label for="pcode">Postal Code*</label>
-                            <input type="text" id="pcode" name="pcode" required>
+                            <input type="text" id="pcode" name="pcode" required placeholder="Postal code *">
                         </div>
                     </div>
-                    <div class="contry">
+                    <div class="country">
                         <div>
-                            <label for="contry">Country*</label>
-                            <input type="text" id="contry" name="contry" required>
+                            <label for="country">Country*</label>
+                            <input type="text" id="country" name="country" required placeholder="Country *">
                         </div>
                     </div>
                     <div class="email">
                         <label for="email">E-mail*</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" required placeholder="E-mail *">
+                    </div>
+                    <p>*Required fields</p>
+                    <div class="confirm_btn">
+                        <input type="submit" value="Confirm">
                     </div>
                 </form>
-                <p>*Required fields</p>
             </section>
-            </form>
         </section>
-
         <section class="pay-method">
             <h1>3. Payment Info</h1>
             <p>Credit Card Info</p>
-            <div class="form-wrap">
+            <div class="pay-wrapper">
                 <form method="POST">
                     <div>
                         <label for="crd">Card number</label>
@@ -180,19 +162,35 @@
                         <input type="date" id="xpr-date" name="xpr-date" required>
                     </div>
                     <div>
-                        <label for="cvv">Cvv</label>
+                        <label for="cvv">CVV</label>
                         <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                    </div>
+                    <div class="confirm_btn">
+                        <input type="submit" value="Confirm">
                     </div>
                 </form>
             </div>
-            <div>
-                <label for="rmbr-cinfo">Remember card info</label>
-                <input type="checkbox" id="rmbr-cinfo" name="rmbr-cinfo">
+        </section>
+        <section class="order-sum">
+            <h1>Order summary</h1>
+            <div class="summary-wrap">
+                <div class="products">
+                    <p>Products</p>
+                    <p>$169.98</p>
+                </div>
+                <div class="shp-cost">
+                    <p>Shipping cost</p>
+                    <p>$0.00</p>
+                </div>
+                <div class="sum-total">
+                    <h2>Total Price</h2>
+                    <h2>$169.98</h2>
+                </div>
             </div>
         </section>
-        <section class="confirm-btn ">
-            <a href="/checkout-success.html "> Confirm and Complete Purchase</a>
-        </section>
+        <div class="confirm_btn">
+            <a href="/checkout-success.html ">Confirm and Complete Purchase</a>
+        </div>
     </main>
     <footer>Copyright &copy;</footer>
 </body>

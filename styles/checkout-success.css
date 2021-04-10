@@ -38,6 +38,11 @@ p {
     letter-spacing: 1pt;
 }
 
+.btn a:hover {
+    background-color: #3098BF;
+    border: 1px solid #3098BF;
+}
+
 .card-wrap {
     display: flex;
     flex-direction: column;
