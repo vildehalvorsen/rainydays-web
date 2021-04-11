@@ -122,7 +122,6 @@ select:hover {
 
 .dropdown a {
     font-family: "fira-sans-condensed-2", sans-serif;
-    font-weight: 900;
     background-color: #2F4159;
     border: none;
     border-radius: 5px;
