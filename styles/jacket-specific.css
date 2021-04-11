@@ -81,7 +81,7 @@ img {
     padding: 5px;
     margin: 10px auto 40px;
     max-width: 300px;
-    max-height: 180px;
+    max-height: 200px;
 }
 
 .infotag h2 {
@@ -93,6 +93,7 @@ img {
 
 .infotag p {
     font-size: 0.8em;
+    padding: 0px;
     margin-bottom: 20px;
 }
 
