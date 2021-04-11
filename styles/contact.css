@@ -17,7 +17,7 @@ h2 {
 }
 
 h2 {
-    font-family: fira-sans-compressed-2, sans-serif;
+    font-family: "fira-sans-compressed-2", sans-serif;
     font-weight: 700;
     text-transform: none;
     font-size: 0.9em;
@@ -47,7 +47,7 @@ form label {
 
 input,
 textarea {
-    font-family: fira-sans-compressed-2, sans-serif;
+    font-family: "fira-sans-compressed-2", sans-serif;
     font-weight: 600;
     border: 1px solid #2F4159;
     border-radius: 5px;
