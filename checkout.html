@@ -31,25 +31,26 @@
         </nav>
     </header>
     <main>
-
-        <section class="shopping-bag">
-            <h1>1. Your Shopping bag</h1>
-            <div class="title">
-                <p>Product</p>
-                <p>Size</p>
-                <p>Quantity</p>
-                <p>Total</p>
-            </div>
-            <div class="items-wrap">
-                <div class="item-1">
-                    <div class="item">
-                        <img src="/images/jackets/Rainydays4.jpg">
-                        <h2>Rainydays 4</h2>
-                        <p>A short description</p>
+        <div class="full-wrap">
+            <div>
+                <section class="shopping-bag">
+                    <h1>1. Your Shopping bag</h1>
+                    <div class="title">
+                        <p>Product</p>
+                        <p>Size</p>
+                        <p>Quantity</p>
+                        <p>Total</p>
                     </div>
-                    <div class="size-drop">
-                        <label for="size">Choose size:</label>
-                        <select name="size" id="size" method="POST">
+                    <div class="items-wrap">
+                        <div class="item-1">
+                            <div class="item">
+                                <img src="/images/jackets/Rainydays4.jpg">
+                                <h2>Rainydays 4</h2>
+                                <p>A short description</p>
+                            </div>
+                            <div class="size-drop">
+                                <label for="size">Choose size:</label>
+                                <select name="size" id="size" method="POST">
                         <option value="" selected hidden>Size</option>
                         <option value="x-small"> XS</option>
                         <option value="small"> S</option>
@@ -57,27 +58,27 @@
                         <option value="large"> L</option>
                         <option value="x-large"> XL</option>
                         </select>
-                    </div>
-                    <div class="qty">
-                        <label for="qty">Quantity</label>
-                        <input type="text" id="qty" name="qty" placeholder="1">
-                    </div>
-                    <div class="total">
-                        <h3>$79.99</h3>
-                    </div>
-                    <div class="dlt">
-                        <a href="#"><i class="fas fa-trash-alt "></i></a>
-                    </div>
-                </div>
-                <div class="item-2">
-                    <div class="item">
-                        <img src="/images/jackets/Rainydays6.jpeg">
-                        <h2>Rainydays 6</h2>
-                        <p>A short description</p>
-                    </div>
-                    <div class="size-drop">
-                        <label for="size ">Choose size:</label>
-                        <select name="size " id="size " method="POST ">
+                            </div>
+                            <div class="qty">
+                                <label for="qty">Quantity</label>
+                                <input type="text" id="qty" name="qty" placeholder="1">
+                            </div>
+                            <div class="total">
+                                <h3>$79.99</h3>
+                            </div>
+                            <div class="dlt">
+                                <a href="#"><i class="fas fa-trash-alt "></i></a>
+                            </div>
+                        </div>
+                        <div class="item-2">
+                            <div class="item">
+                                <img src="/images/jackets/Rainydays6.jpeg">
+                                <h2>Rainydays 6</h2>
+                                <p>A short description</p>
+                            </div>
+                            <div class="size-drop">
+                                <label for="size ">Choose size:</label>
+                                <select name="size " id="size " method="POST ">
                     <option value=" " selected hidden>Size</option>
                     <option value="x-small "> XS</option>
                     <option value="small "> S</option>
@@ -85,109 +86,113 @@
                     <option value="large "> L</option>
                     <option value="x-large "> XL</option>
                     </select>
+                            </div>
+                            <div class="qty">
+                                <label for="qty">Quantity</label>
+                                <input type="text" id="qty" name="qty" placeholder="1">
+                            </div>
+                            <div class="total">
+                                <h3>$89.99</h3>
+                            </div>
+                            <div class="dlt">
+                                <a href="#"><i class="fas fa-trash-alt "></i></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="qty">
-                        <label for="qty">Quantity</label>
-                        <input type="text" id="qty" name="qty" placeholder="1">
+                </section>
+                <section class="shipping-info ">
+                    <h1>2. Shipping information</h1>
+                    <div class="form-wrapper">
+                        <form method="POST">
+                            <div class="name">
+                                <label for="fullname">Full name*</label>
+                                <input type="text" id="fullname" name="fullname" required placeholder="Full name *">
+                            </div>
+                            <div class="adr-line">
+                                <div>
+                                    <label for="adr1">Address Line 1*</label>
+                                    <input type="text" id="adr1" name="adr1" required placeholder="Address line 1 *">
+                                </div>
+                                <div>
+                                    <label for="adr2">Address Line 2</label>
+                                    <input type="text" id="adr2" name="adr2" placeholder="Address line 2">
+                                </div>
+                            </div>
+                            <div class="cty-line">
+                                <div>
+                                    <label for="city">City*</label>
+                                    <input type="text" id="city" name="city" required placeholder="City *">
+                                </div>
+                                <div>
+                                    <label for="pcode">Postal Code*</label>
+                                    <input type="text" id="pcode" name="pcode" required placeholder="Postal code *">
+                                </div>
+                            </div>
+                            <div class="country">
+                                <div>
+                                    <label for="country">Country*</label>
+                                    <input type="text" id="country" name="country" required placeholder="Country *">
+                                </div>
+                            </div>
+                            <div class="email">
+                                <label for="email">E-mail*</label>
+                                <input type="email" id="email" name="email" required placeholder="E-mail *">
+                            </div>
+                            <p>*Required fields</p>
+                            <div class="confirm_btn">
+                                <input type="submit" value="Confirm">
+                            </div>
+                        </form>
                     </div>
-                    <div class="total">
-                        <h3>$89.99</h3>
+                </section>
+                <section class="pay-method">
+                    <h1>3. Payment Info</h1>
+                    <p>Credit Card Info</p>
+                    <div class="pay-wrapper">
+                        <form method="POST">
+                            <div>
+                                <label for="crd">Card number</label>
+                                <input type="text" id="crd" name="crd" placeholder="1234 5678 3456 2456" required>
+                            </div>
+                            <div>
+                                <label for="hld-name">Card holder name</label>
+                                <input type="text" id="hld-name" name="hld-name" placeholder="Jane Doe" required>
+                            </div>
+                            <div>
+                                <label for="xpr-date">Expire date</label>
+                                <input type="date" id="xpr-date" name="xpr-date" required>
+                            </div>
+                            <div>
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                            </div>
+                            <div class="confirm_btn">
+                                <input type="submit" value="Confirm">
+                            </div>
+                        </form>
                     </div>
-                    <div class="dlt">
-                        <a href="#"><i class="fas fa-trash-alt "></i></a>
-                    </div>
-                </div>
+                </section>
             </div>
-        </section>
-        <section class="shipping-info ">
-            <h1>2. Shipping information</h1>
-            <section class="form-wrapper">
-                <form method="POST">
-                    <div class="name">
-                        <label for="fullname">Full name*</label>
-                        <input type="text" id="fullname" name="fullname" required placeholder="Full name *">
-                    </div>
-                    <div class="adr-line">
-                        <div>
-                            <label for="adr1">Address Line 1*</label>
-                            <input type="text" id="adr1" name="adr1" required placeholder="Address line 1 *">
+            <div>
+                <section class="order-sum">
+                    <h1>Order summary</h1>
+                    <div class="summary-wrap">
+                        <div class="products">
+                            <p>Products</p>
+                            <p>$169.98</p>
                         </div>
-                        <div>
-                            <label for="adr2">Address Line 2</label>
-                            <input type="text" id="adr2" name="adr2" placeholder="Address line 2">
+                        <div class="shp-cost">
+                            <p>Shipping cost</p>
+                            <p>$0.00</p>
+                        </div>
+                        <div class="sum-total">
+                            <h2>Total Price</h2>
+                            <h2>$169.98</h2>
                         </div>
                     </div>
-                    <div class="cty-line">
-                        <div>
-                            <label for="city">City*</label>
-                            <input type="text" id="city" name="city" required placeholder="City *">
-                        </div>
-                        <div>
-                            <label for="pcode">Postal Code*</label>
-                            <input type="text" id="pcode" name="pcode" required placeholder="Postal code *">
-                        </div>
-                    </div>
-                    <div class="country">
-                        <div>
-                            <label for="country">Country*</label>
-                            <input type="text" id="country" name="country" required placeholder="Country *">
-                        </div>
-                    </div>
-                    <div class="email">
-                        <label for="email">E-mail*</label>
-                        <input type="email" id="email" name="email" required placeholder="E-mail *">
-                    </div>
-                    <p>*Required fields</p>
-                    <div class="confirm_btn">
-                        <input type="submit" value="Confirm">
-                    </div>
-                </form>
-            </section>
-        </section>
-        <section class="pay-method">
-            <h1>3. Payment Info</h1>
-            <p>Credit Card Info</p>
-            <div class="pay-wrapper">
-                <form method="POST">
-                    <div>
-                        <label for="crd">Card number</label>
-                        <input type="text" id="crd" name="crd" placeholder="1234 5678 3456 2456" required>
-                    </div>
-                    <div>
-                        <label for="hld-name">Card holder name</label>
-                        <input type="text" id="hld-name" name="hld-name" placeholder="Jane Doe" required>
-                    </div>
-                    <div>
-                        <label for="xpr-date">Expire date</label>
-                        <input type="date" id="xpr-date" name="xpr-date" required>
-                    </div>
-                    <div>
-                        <label for="cvv">CVV</label>
-                        <input type="text" id="cvv" name="cvv" placeholder="123" required>
-                    </div>
-                    <div class="confirm_btn">
-                        <input type="submit" value="Confirm">
-                    </div>
-                </form>
+                </section>
             </div>
-        </section>
-        <section class="order-sum">
-            <h1>Order summary</h1>
-            <div class="summary-wrap">
-                <div class="products">
-                    <p>Products</p>
-                    <p>$169.98</p>
-                </div>
-                <div class="shp-cost">
-                    <p>Shipping cost</p>
-                    <p>$0.00</p>
-                </div>
-                <div class="sum-total">
-                    <h2>Total Price</h2>
-                    <h2>$169.98</h2>
-                </div>
-            </div>
-        </section>
+        </div>
         <div class="confirm_btn">
             <a href="/checkout-success.html ">Confirm and Complete Purchase</a>
         </div>

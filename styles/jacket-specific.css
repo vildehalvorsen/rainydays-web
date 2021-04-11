@@ -127,6 +127,7 @@ select:hover {
     border: none;
     border-radius: 5px;
     padding: 7px 10px;
+    cursor: pointer;
 }
 
 .dropdown a:hover {

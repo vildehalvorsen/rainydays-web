@@ -43,7 +43,7 @@ main {
 /*Order summary*/
 
 .order-sum {
-    max-width: 250px;
+    max-width: 300px;
     margin: 20px auto;
 }
 
@@ -100,7 +100,6 @@ main {
     font-weight: 1000;
     font-size: 0.7em;
     letter-spacing: 1pt;
-    text-transform: ;
 }
 
 .size-drop {
@@ -132,7 +131,6 @@ main {
 /*Shipping info*/
 
 .form-wrapper {
-    box-shadow: none;
     padding: 5px 0px;
 }
 
@@ -230,4 +228,151 @@ main {
 .confirm_btn input:hover {
     background-color: #3098BF;
     border: 1px solid #3098BF;
+}
+
+
+/*Media Queries*/
+
+@media all and (min-width: 600px) {
+    main {
+        margin: 0px 0px 100px;
+    }
+    .full-wrap {
+        display: flex;
+        justify-content: center;
+        max-width: 800px;
+        margin: 50px auto;
+    }
+    section {
+        width: 400px;
+        margin-right: 10px;
+    }
+    .order-sum {
+        position: sticky;
+        top: 100px;
+        width: 180px;
+    }
+}
+
+@media all and (min-width: 700px) {
+    .full-wrap {
+        margin: 50px auto;
+    }
+    section {
+        max-width: 350px;
+        margin-right: 20px;
+    }
+    /*Order Summary*/
+    .order-sum {
+        width: 200px;
+    }
+    /*Shopping bag*/
+    .total {
+        left: 40px;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .full-wrap {
+        margin: 100px auto 30px;
+    }
+    section {
+        max-width: 400px;
+        padding: 20px;
+        margin: 20px 40px 40px 0px;
+    }
+    h1 {
+        font-size: 1.4em;
+        letter-spacing: 1pt;
+        text-shadow: none;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-weight: 900;
+        margin: 0px;
+    }
+    /*Order summary*/
+    .order-sum {
+        width: 250px;
+    }
+    /*Shopping bag*/
+    .item h2 {
+        font-size: 0.8em;
+    }
+    .title {
+        display: inline-flex;
+    }
+    .title p {
+        padding-right: 65px;
+    }
+    .size-drop {
+        position: relative;
+        left: -30px;
+    }
+    .qty input {
+        left: -20px;
+    }
+    .total {
+        left: 0px;
+    }
+    .dlt a {
+        color: #2f4159;
+        display: block;
+    }
+    .dlt a:hover {
+        color: #ff0000;
+    }
+    /*Shipping info*/
+    .shipping-info input {
+        padding: 10px;
+        margin: 10px 0px;
+        width: 200px;
+    }
+    .adr-line {
+        display: flex;
+        justify-content: space-between;
+    }
+    .adr-line input {
+        width: 170px;
+    }
+    .cty-line {
+        display: flex;
+        justify-content: space-between;
+        width: 220px;
+    }
+    .cty-line input {
+        width: 80px;
+    }
+    .form-wrapper p {
+        margin: -5px 0px 10px;
+    }
+    /*Payment info*/
+    .pay-method>p {
+        font-size: 1.4em;
+    }
+    .pay-wrapper label {
+        display: block;
+        font-size: 0.9em;
+        margin-top: 10px;
+    }
+    .pay-wrapper input {
+        border-radius: 10px;
+        padding: 10px;
+        margin: 5px 0px;
+    }
+    .pay-wrapper .confirm_btn {
+        margin-top: 20px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    section {
+        padding: 40px;
+        margin: 20px 60px 60px 0px;
+    }
+    .order-sum {
+        width: 300px;
+    }
 }
