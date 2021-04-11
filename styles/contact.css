@@ -50,7 +50,7 @@ textarea {
     font-family: "fira-sans-compressed-2", sans-serif;
     font-weight: 600;
     border: 1px solid #2F4159;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 0px 10px 10px 0px;
     padding: 8px;
 }
@@ -146,7 +146,6 @@ p {
     }
     input,
     textarea {
-        border-radius: 2px;
         margin: 0px 10px 20px 0px;
     }
     input {
