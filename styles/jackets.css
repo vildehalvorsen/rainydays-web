@@ -25,11 +25,11 @@
     /*Jacket cards*/
     
     h3 {
-        font-family: "Prohibition";
+        font-family: "Prohibition", "fira-sans-condensed-2", "fira-sans-compressed-2", "ropa-soft-pro";
         font-size: 1.5em;
         color: #2f4159;
         letter-spacing: 1pt;
-        margin: 0px 10px;
+        margin: 0px;
     }
     
     p {
@@ -38,7 +38,7 @@
     }
     
     img {
-        width: 180px;
+        width: 181px;
         border: 1px solid #2f4159;
     }
     
@@ -98,7 +98,7 @@
             width: 200px;
         }
         .jackets {
-            max-width: 202px;
+            max-width: 201px;
         }
         .featured {
             margin: 90px auto;
@@ -120,7 +120,7 @@
             padding: 0px 5px 10px 0px;
         }
         img {
-            width: 300px;
+            width: 300.5px;
         }
         .jackets {
             max-width: 302px;
