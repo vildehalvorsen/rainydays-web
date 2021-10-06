@@ -7,7 +7,7 @@ h1 {
     letter-spacing: 1pt;
     text-align: center;
     padding: 0px 5px;
-    margin: 30px auto;
+    margin: 50px auto;
 }
 
 .arrow-l,
@@ -38,7 +38,8 @@ img {
 
 .jackets {
     display: flex;
-    overflow: scroll;
+    overflow-y: visible;
+    overflow-x: scroll;
     max-width: 310px;
 }
 
@@ -121,16 +122,17 @@ select:hover {
     display: none;
 }
 
-.dropdown a {
+.btn {
     font-family: "fira-sans-condensed-2", sans-serif;
+    font-weight: 800;
     background-color: #2F4159;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     padding: 7px 10px;
-    cursor: pointer;
 }
 
-.dropdown a:hover {
+.btn:hover {
     background-color: #3098BF;
 }
 
@@ -236,8 +238,8 @@ select:hover {
     select {
         padding: 10px 5px 10px 5px;
     }
-    .dropdown a {
-        padding: 10px 15px;
+    .btn {
+        padding: 12px 15px;
     }
 }
 

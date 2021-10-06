@@ -6,11 +6,10 @@ main {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-h1,
-h2 {
+h1 {
     font-size: 1.6em;
     text-align: center;
-    margin: 15px 0px 10px 0px;
+    margin: 50px 0px 10px 0px;
     max-width: 375px;
     display: flex;
     justify-content: center;
@@ -20,6 +19,7 @@ h2 {
     font-family: "fira-sans-compressed-2", sans-serif;
     font-weight: 700;
     text-transform: none;
+    text-align: center;
     font-size: 0.9em;
     letter-spacing: 1pt;
 }
@@ -35,7 +35,7 @@ h2 {
 form {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 form label {
@@ -53,17 +53,10 @@ textarea {
     border-radius: 10px;
     margin: 0px 10px 10px 0px;
     padding: 8px;
-}
-
-input,
-textarea {
-    width: 80%;
+    width: 90%;
 }
 
 textarea {
-    font-family: "fira-sans-compressed-2", sans-serif;
-    font-weight: bold;
-    font-size: 0.8em;
     height: 90px;
     margin-bottom: 0px;
 }
@@ -81,7 +74,7 @@ p {
     margin: 0px;
 }
 
-.submit_btn {
+.btn {
     font-family: "Prohibition";
     font-size: 1.1em;
     letter-spacing: 1pt;
@@ -89,15 +82,18 @@ p {
     color: #fff;
     text-transform: uppercase;
     border-radius: 5px;
-    padding: 5px 30px;
-    margin: 10px 25px;
-    max-width: 100px;
-    float: right;
+    margin: 5px;
+    width: 110px;
 }
 
-.submit_btn:hover {
+.btn:hover {
     background-color: #3098BF;
     border-color: #3098BF;
+}
+
+.submitButton {
+    display: flex;
+    justify-content: right;
 }
 
 
@@ -112,17 +108,17 @@ p {
     main {
         background-color: rgba(255, 255, 255, 0.1);
     }
-    h1,
-    h2 {
+    h1 {
         font-size: 2em;
         max-width: 400px;
+        margin: 10px 0px;
     }
     h2 {
         font-size: 1.3em;
     }
     .contact {
         background-color: rgba(255, 255, 255, 0.9);
-        padding: 10px;
+        padding: 30px;
         max-width: 400px;
         margin: 50px 50px;
     }
@@ -131,7 +127,7 @@ p {
 @media all and (min-width: 800px) {
     .contact {
         padding: 50px 80px 60px;
-        margin: 5%;
+        margin: 50px;
     }
     /*Form*/
     .form-wrapper {
@@ -143,16 +139,14 @@ p {
     }
     form label {
         font-size: 1em;
+        margin-bottom: 5px;
     }
     input,
     textarea {
         margin: 0px 10px 20px 0px;
-    }
-    input {
         width: 100%;
     }
     textarea {
-        width: 100%;
         height: 150px;
         margin-bottom: 0px;
     }
@@ -167,7 +161,7 @@ p {
     p {
         font-size: 0.8em;
     }
-    .submit_btn {
+    .btn {
         margin: -5px -18px;
     }
 }

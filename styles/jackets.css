@@ -1,26 +1,19 @@
     h1 {
         font-size: 2em;
         text-align: center;
-        margin: 10px;
+        margin: 50px 0px 20px;
     }
     
     h2 {
         font-family: "fira-sans-condensed-2", sans-serif;
         font-weight: 800;
-        font-style: normal;
         font-size: 0.9em;
         letter-spacing: 0pt;
         text-transform: none;
         text-align: center;
         color: #000;
         max-width: 300px;
-    }
-    
-    .head-title {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 50px auto;
+        margin: 0px auto;
     }
     /*Jacket cards*/
     
@@ -38,7 +31,7 @@
     }
     
     img {
-        width: 181px;
+        width: 180px;
         border: 1px solid #2f4159;
     }
     
@@ -95,7 +88,7 @@
             padding-bottom: 10px;
         }
         img {
-            width: 200px;
+            width: 199px;
         }
         .jackets {
             max-width: 201px;
@@ -109,6 +102,7 @@
     @media all and (min-width:900px) {
         h1 {
             font-size: 4em;
+            margin-top: 100px;
         }
         h2 {
             font-size: 1.4em;
@@ -120,7 +114,7 @@
             padding: 0px 5px 10px 0px;
         }
         img {
-            width: 300.5px;
+            width: 300px;
         }
         .jackets {
             max-width: 302px;
