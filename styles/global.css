@@ -6,7 +6,6 @@ body {
     font-style: normal;
     background-image: url(/images/background-pattern-resized.jpg);
     background-size: cover;
-    background-attachment: fixed;
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
@@ -227,7 +226,7 @@ nav li:hover {
     }
     .active {
         background-color: rgba(173, 216, 230, 0.377);
-        padding: 22px 18px;
+        padding: 22px 18px 20px;
     }
     .headertop {
         background-position-x: left;

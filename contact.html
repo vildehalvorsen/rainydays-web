@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/kzu1jpj.css">
     <script src="https://kit.fontawesome.com/292441d70e.js" crossorigin="anonymous"></script>
     <title>RainyDays | Contact</title>
-    <link href="/styles/styles.css" rel="stylesheet" />
+    <link href="/styles/global.css" rel="stylesheet" />
     <link href="/styles/contact.css" rel="stylesheet" />
     <!-- Hotjar Tracking Code for https://boring-dubinsky-016e16.netlify.app/ -->
     <script>
@@ -47,39 +47,43 @@
         </nav>
     </header>
     <main>
-        <section class="contact">
+        <section class="contactContainer">
             <h1>Do you have any questions or feedback?</h1>
             <h2>Please let us know by filling out this form:</h2>
-            <form method="POST">
-                <section class="form-wrapper">
-                    <div class="name">
+            <form method="POST" class="contact">
+                <div class="formWrapper">
+                    <div class="nameInputs">
                         <div>
-                            <label for="firstname">First name*</label>
+                            <label for="firstname">First name* <i class="fas fa-check" id="firstNameCheck"></i></label>
                             <input type="text" id="firstname" name="firstname" placeholder="Jane">
+                            <p id="firstNameError">Please fill in a valid first name</p>
                         </div>
                         <div>
-                            <label for="surname">Surname*</label>
+                            <label for="surname">Surname* <i class="fas fa-check" id="surNameCheck"></i></label>
                             <input type="text" id="surname" name="surname" placeholder="Doe">
+                            <p id="surNameError">Please fill in a valid surname</p>
                         </div>
                     </div>
                     <div class="email">
-                        <label for="email">E-mail*</label>
+                        <label for="email">E-mail* <i class="fas fa-check" id="emailCheck"></i></label>
                         <input type="email" id="email" name="email" placeholder="janedoe@mail.com">
+                        <p id="emailError">Please fill in a valid e-mail address</p>
                     </div>
                     <div class="message">
-                        <label for="message">Message*</label>
-                        <textarea name="message" id="messageBox" placeholder="Type something..."></textarea>
-                        <p>Reguired fields*</p>
+                        <label for="message">Message* <i class="fas fa-check" id="messageCheck"></i></label>
+                        <textarea name="message" id="message" placeholder="Type something..."></textarea>
+                        <p id="messageError">Please write a message.</p>
+                        <p id="required">Reguired fields*</p>
                     </div>
                     <div class="submitButton">
-                        <input type="submit" value="Submit" class="btn">
+                        <button class="btn">Submit</button>
                     </div>
-                </section>
+                </div>
             </form>
-
         </section>
     </main>
     <footer>Copyright &copy;</footer>
+    <script src="/js/contact.js "></script>
+    <script src="/js/validation.js "></script>
 </body>
-
-</html>
+< /html>

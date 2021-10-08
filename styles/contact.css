@@ -24,7 +24,7 @@ h2 {
     letter-spacing: 1pt;
 }
 
-.contact {
+.contactContainer {
     max-width: 400px;
     margin: 0px auto 10px auto;
 }
@@ -42,7 +42,7 @@ form label {
     font-size: 0.8em;
     color: #2F4159;
     display: block;
-    margin: 0px;
+    margin: 0px 0px 5px;
 }
 
 input,
@@ -53,12 +53,12 @@ textarea {
     border-radius: 10px;
     margin: 0px 10px 10px 0px;
     padding: 8px;
-    width: 90%;
+    width: 200px;
 }
 
 textarea {
     height: 90px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 input:focus,
@@ -66,11 +66,32 @@ textarea:focus {
     border: 2px solid #2f4159;
 }
 
-p {
+#firstNameCheck,
+#surNameCheck,
+#emailCheck,
+#messageCheck {
+    display: none;
+    color: green;
+}
+
+#firstNameError,
+#surNameError,
+#emailError,
+#messageError {
+    display: none;
+    color: rgb(172, 23, 23);
+    font-size: 0.8em;
+    font-weight: bolder;
+    width: 216px;
+    padding: 0px;
+    margin: -5px 0px 10px;
+}
+
+#required {
     font-size: 0.6em;
     color: #2F4159;
     opacity: 0.5;
-    display: inline-block;
+    display: block;
     margin: 0px;
 }
 
@@ -81,9 +102,12 @@ p {
     background-color: #2F4159;
     color: #fff;
     text-transform: uppercase;
+    border: 0px;
     border-radius: 5px;
+    padding: 7px 0px;
     margin: 5px;
     width: 110px;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -94,6 +118,65 @@ p {
 .submitButton {
     display: flex;
     justify-content: right;
+    width: 216px;
+}
+
+
+/*Validation*/
+
+.cardWrap {
+    position: absolute;
+    top: 200px;
+}
+
+.cardWrap h1 {
+    font-size: 2em;
+    letter-spacing: 0pt;
+    text-shadow: none;
+    text-align: center;
+    padding-left: 5px;
+    margin: 20px;
+}
+
+.cardWrap p {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.successCard {
+    background-color: #ffffff;
+    padding: 60px 50px 60px;
+    width: 300px;
+    margin: 0px auto;
+}
+
+.fa-check {
+    display: flex;
+    font-size: 2.5em;
+    color: #288f28;
+    justify-content: center;
+}
+
+.exploreBtn {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px 20px;
+}
+
+.exploreBtn a {
+    background-color: #2f4159;
+    padding: 5px 30px;
+    border-color: 1px solid #2f4159;
+    border-radius: 5px;
+    font-family: "Prohibition";
+    font-size: 1.2em;
+    letter-spacing: 1pt;
+}
+
+.exploreBtn a:hover {
+    background-color: #3098BF;
+    border: 1px solid #3098BF;
 }
 
 
@@ -102,66 +185,84 @@ p {
 @media all and (min-width: 600px) {
     body {
         background-image: url(/images/Contact-background_op.jpg);
-        background-attachment: fixed;
         background-position: center;
     }
     main {
         background-color: rgba(255, 255, 255, 0.1);
     }
+    .contactContainer {
+        max-width: 500px;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 10px;
+        margin: 50px auto;
+    }
     h1 {
         font-size: 2em;
         max-width: 400px;
-        margin: 10px 0px;
+        margin: 0px auto 20px;
     }
     h2 {
         font-size: 1.3em;
     }
-    .contact {
-        background-color: rgba(255, 255, 255, 0.9);
-        padding: 30px;
-        max-width: 400px;
-        margin: 50px 50px;
-    }
-}
-
-@media all and (min-width: 800px) {
-    .contact {
-        padding: 50px 80px 60px;
-        margin: 50px;
-    }
-    /*Form*/
-    .form-wrapper {
-        max-width: 375px;
-    }
     form {
-        display: block;
-        margin-top: 50px;
+        padding: 30px 0px;
+        width: 400px;
+        margin: 10px auto;
     }
     form label {
-        font-size: 1em;
-        margin-bottom: 5px;
+        font-size: 0.9em;
     }
     input,
     textarea {
         margin: 0px 10px 20px 0px;
-        width: 100%;
+        padding: 10px;
+        width: 250px;
     }
     textarea {
-        height: 150px;
-        margin-bottom: 0px;
+        height: 100px;
     }
-    .name {
-        display: flex;
-        justify-content: space-between;
+    #firstNameError,
+    #surNameError,
+    #emailError,
+    #messageError {
+        padding: 0px;
+        margin: -10px 0px 20px;
+        width: 200px;
     }
-    .email,
-    .message {
-        display: block;
-    }
-    p {
+    #required {
         font-size: 0.8em;
     }
     .btn {
-        margin: -5px -18px;
+        padding: 8px 0px;
+    }
+    .submitButton {
+        width: 273px;
+    }
+    /*Validation*/
+    .cardWrap {
+        top: 95px;
+        width: 500px;
+    }
+    .cardWrap p {
+        font-size: 1.1em;
+    }
+    .successCard {
+        padding: 200px 50px 200px;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .contactContainer {
+        margin: 50px;
+    }
+    #firstNameError,
+    #surNameError,
+    #emailError,
+    #messageError {
+        margin: -15px 0px 10px;
+    }
+    /*Validation*/
+    .cardWrap {
+        top: 110px;
     }
 }
