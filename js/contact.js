@@ -23,12 +23,12 @@ const messageCheck = document.querySelector("#messageCheck");
 function validateContactForm() {
     event.preventDefault();
 
-    if (checkValue(firstName.value, 1)) {
+    if (checkValue(firstName.value.trim(), 1)) {
         firstNameError.style.display = "none";
     } else {
         firstNameError.style.display = "block";
     }
-    if (checkValue(surName.value, 1)) {
+    if (checkValue(surName.value.trim(), 2)) {
         surNameError.style.display = "none";
     } else {
         surNameError.style.display = "block";
@@ -44,7 +44,7 @@ function validateContactForm() {
         messageError.style.display = "block";
     }
 
-    if (checkValue(firstName.value, 1) && checkValue(surName.value, 1) && validateEmail(email.value) && checkValue(message.value, 10)) {
+    if (checkValue(firstName.value.trim(), 1) && checkValue(surName.value.trim(), 2) && validateEmail(email.value) && checkValue(message.value, 10)) {
         submitContactForm();
     }
 

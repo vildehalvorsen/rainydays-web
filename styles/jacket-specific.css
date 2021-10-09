@@ -15,7 +15,7 @@ h1 {
     display: none;
 }
 
-.content-wrap {
+.contentWrap {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,21 +26,21 @@ h1 {
 
 /*Images*/
 
+.jackets {
+    display: flex;
+    overflow-y: visible;
+    overflow-x: scroll;
+    max-width: 310px;
+}
+
 img {
     border: 1px solid #2F4159;
     width: 250px;
     margin: 0px 30px;
 }
 
-.sub-jackets {
+.subImg {
     display: flex;
-}
-
-.jackets {
-    display: flex;
-    overflow-y: visible;
-    overflow-x: scroll;
-    max-width: 310px;
 }
 
 
@@ -74,7 +74,7 @@ img {
 
 /*Info*/
 
-.infotag {
+.infoBox {
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -85,14 +85,14 @@ img {
     max-height: 200px;
 }
 
-.infotag h2 {
+.infoBox h2 {
     font-size: 1.5em;
     font-weight: 100;
     text-shadow: none;
     margin: 0px;
 }
 
-.infotag p {
+.infoBox p {
     font-size: 0.8em;
     padding: 0px;
     margin-bottom: 20px;
@@ -122,7 +122,17 @@ select:hover {
     display: none;
 }
 
-.btn {
+.dropdown {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -40px;
+}
+
+
+/*Buttons*/
+
+.submitBtn {
     font-family: "fira-sans-condensed-2", sans-serif;
     font-weight: 800;
     background-color: #2F4159;
@@ -130,17 +140,32 @@ select:hover {
     border: none;
     border-radius: 5px;
     padding: 7px 10px;
+    cursor: pointer;
 }
 
-.btn:hover {
+.submitBtn:hover {
     background-color: #3098BF;
 }
 
-.dropdown {
-    display: flex;
-    align-items: center;
-    position: relative;
-    top: -40px;
+
+/* Validation */
+
+.items {
+    font-family: "fira-sans-condensed-2", sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    top: -15px;
+    right: ;
+    background-color: #f78708;
+    border-radius: 50%;
+    color: #000000;
+    padding: 2px 7px 1px;
+}
+
+.validator p {
+    margin-top: -30px;
+    font-weight: bolder;
+    color: green;
 }
 
 
@@ -179,34 +204,34 @@ select:hover {
         opacity: 1;
         transform: scale(1.1);
     }
-    .content-wrap {
+    .contentWrap {
         max-width: 470px;
     }
     /*Images*/
-    .main img {
-        width: 300px;
-    }
-    .sub img {
-        width: 144px;
-        margin: 0px 0px 4px 10px;
+    .jackets {
+        overflow: visible;
+        max-width: 460px;
     }
     img {
         margin: 0px;
         border: 1px solid #2F4159;
         transition: transform .1s;
     }
-    .main img:hover {
-        transform: scale(1.04);
-    }
-    .sub img:hover {
-        transform: scale(1.05);
-    }
-    .sub-jackets {
+    .subImg {
         display: block;
     }
-    .jackets {
-        overflow: visible;
-        max-width: 460px;
+    .mainImg img {
+        width: 300px;
+    }
+    .subImg img {
+        width: 144px;
+        margin: 0px 0px 4px 10px;
+    }
+    .mainImg img:hover {
+        transform: scale(1.04);
+    }
+    .subImg img:hover {
+        transform: scale(1.05);
     }
     /*Description, Details, Maintenance*/
     .description h3 {
@@ -223,13 +248,13 @@ select:hover {
         padding: 10px 0px;
     }
     /*Info*/
-    .infotag {
+    .infoBox {
         padding: 10px 20px 100px;
         margin: 10px auto 50px;
         max-width: 420px;
         max-height: 130px;
     }
-    .infotag p {
+    .infoBox p {
         font-size: 0.95em;
     }
     .price {
@@ -238,7 +263,7 @@ select:hover {
     select {
         padding: 10px 5px 10px 5px;
     }
-    .btn {
+    .submitBtn {
         padding: 12px 15px;
     }
 }
@@ -254,25 +279,25 @@ select:hover {
     .arrow-r {
         top: 60%;
     }
-    .content-wrap {
+    .contentWrap {
         max-width: 560px;
     }
     /*Images*/
-    .main img {
+    .jackets {
+        max-width: 610px;
+    }
+    .mainImg img {
         width: 360px;
     }
-    .sub img {
+    .subImg img {
         width: 171px;
         margin: 0px 0px 10px 15px;
     }
-    .main img:hover {
+    .mainImg img:hover {
         transform: scale(1.02);
     }
-    .sub img:hover {
+    .subImg img:hover {
         transform: scale(1.03);
-    }
-    .jackets {
-        max-width: 610px;
     }
     /*Description, Details, Maintenance*/
     .description p {
@@ -283,27 +308,32 @@ select:hover {
         padding: 20px 0px;
     }
     /*Info*/
-    .infotag {
+    .infoBox {
         padding: 20px 20px 100px 20px;
         margin-bottom: 200px;
         max-width: 510px;
         max-height: 130px;
     }
-    .infotag h2 {
+    .infoBox h2 {
         font-size: 2em;
     }
     .dropdown {
         top: -45px;
     }
+    /* Validation */
+    .items {
+        top: 0px;
+        right: 20px;
+    }
 }
 
 @media all and (min-width: 1000px) {
-    .main-content {
+    .mainContent {
         display: flex;
         justify-content: center;
         margin-bottom: 200px;
     }
-    .content-wrap {
+    .contentWrap {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -311,15 +341,15 @@ select:hover {
         max-width: 590px;
     }
     /*Images*/
-    .main img {
-        width: 388px;
-    }
-    .sub img {
-        width: 188px;
-        margin: 0px 2px 5px 10px;
-    }
     .jackets {
         margin-left: 0px;
+    }
+    .mainImg img {
+        width: 388px;
+    }
+    .subImg img {
+        width: 188px;
+        margin: 0px 2px 5px 10px;
     }
     /*Description, Details, Maintenance*/
     .description {
@@ -328,7 +358,7 @@ select:hover {
         padding: 10px 10px;
     }
     /*Info*/
-    .infotag {
+    .infoBox {
         margin: 0px 50px 0px;
         max-width: 390px;
         max-height: 267px;
@@ -340,14 +370,23 @@ select:hover {
     .dropdown {
         top: -20px;
     }
+    /* Validation*/
+    .validator {
+        margin-top: 20px;
+    }
 }
 
 @media all and (min-width: 1050px) {
+    /*Info*/
     .price {
         position: initial;
         top: initial;
     }
     .dropdown {
         top: -45px;
+    }
+    /*Validation*/
+    .validator {
+        margin-top: -5px;
     }
 }
