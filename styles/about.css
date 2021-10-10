@@ -86,7 +86,7 @@ p {
 
 @media all and (min-width: 800px) {
     body {
-        min-height: 320vh;
+        min-height: 340vh;
     }
     h1 {
         display: inline-block;
@@ -142,7 +142,7 @@ p {
 
 @media all and (min-width: 1000px) {
     body {
-        min-height: 160vh;
+        min-height: 180vh;
     }
     .allContent {
         width: 80%;
