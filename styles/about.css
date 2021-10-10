@@ -1,6 +1,6 @@
 body {
     background-image: url(/images/about-background_opacity.jpg);
-    min-height: 180vh;
+    min-height: 100vh;
 }
 
 h1 {
@@ -85,6 +85,9 @@ p {
 }
 
 @media all and (min-width: 800px) {
+    body {
+        min-height: 320vh;
+    }
     h1 {
         display: inline-block;
         font-size: 3em;
@@ -138,6 +141,9 @@ p {
 }
 
 @media all and (min-width: 1000px) {
+    body {
+        min-height: 160vh;
+    }
     .allContent {
         width: 80%;
         margin: 0px auto;
