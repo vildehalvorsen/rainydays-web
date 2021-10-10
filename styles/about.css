@@ -100,6 +100,7 @@ p {
         position: relative;
         top: 100px;
         width: 70%;
+        margin: 0px auto;
     }
     .contentWrap {
         background-color: rgba(255, 255, 255, 0.9);
