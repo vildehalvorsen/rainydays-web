@@ -5,19 +5,15 @@ const submitBtn = document.querySelector(".btn");
 
 const firstName = document.querySelector("#firstname");
 const firstNameError = document.querySelector("#firstNameError");
-const firstNameCheck = document.querySelector("#firstNameCheck");
 
 const surName = document.querySelector("#surname");
 const surNameError = document.querySelector("#surNameError");
-const surNameCheck = document.querySelector("#surNameCheck");
 
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
-const emailCheck = document.querySelector("#emailCheck");
 
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
-const messageCheck = document.querySelector("#messageCheck");
 
 
 function validateContactForm() {

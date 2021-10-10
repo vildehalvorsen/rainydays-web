@@ -1,367 +1,429 @@
-    section {
-        color: #2f4159;
-        background-color: #fff;
-        box-shadow: 5px +5px 5px 0px rgba(0, 0, 0, 0.2);
-        padding: 10px;
-        margin: 20px 0px;
-        max-width: 300px;
-    }
-    
-    h1,
-    h2 {
-        font-size: 1em;
-        letter-spacing: 1pt;
-        text-shadow: none;
-    }
-    
-    h3 {
-        font-weight: 900;
-        margin: 0px;
-    }
-    
-    p {
-        font-size: 0.9em;
-        margin: 0px;
-    }
-    
-    select,
-    input {
-        border: 1px solid #2f4159;
-        border-radius: 5px;
-    }
-    
-    select:focus,
-    input:focus {
-        border: 2px solid #2f4159;
-    }
-    
-    main {
-        margin: 10px auto;
-    }
-    /*Order summary*/
-    
-    .order-sum {
-        max-width: 300px;
-        margin: 20px 0px;
-    }
-    
-    .order-sum h1 {
-        border-bottom: 1px solid #2f4159;
-    }
-    
-    .products,
-    .shp-cost,
-    .sum-total {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .products p,
-    .shp-cost p {
-        margin: 5px 0px;
-    }
-    /*Shopping bag*/
-    
-    .item-1,
-    .item-2 {
-        display: flex;
-        justify-content: space-between;
-        margin: 10px 0px;
-        border-bottom: 1px solid rgb(48, 66, 90, 0.5);
-    }
-    
-    .item-1 label,
-    .item-1 p,
-    .item-2 label,
-    .item-2 p {
-        display: none;
-    }
-    
-    .title {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid #2f4159;
-    }
-    
-    .item {
-        text-align: center;
-    }
-    
-    .item img {
-        width: 40px;
-    }
-    
-    .item h2 {
-        font-family: "fira-sans-condensed-2", sans-serif;
-        font-size: 0.7em;
-        letter-spacing: 1pt;
-    }
-    
-    .size-drop {
-        position: relative;
-        left: -15px;
-    }
-    
-    .size-drop select {
-        text-align: center;
-    }
-    
-    .qty input {
-        width: 20px;
-        text-align: center;
-        position: relative;
-        left: 10px;
-    }
-    
-    .total {
-        position: relative;
-        left: 26px;
-    }
-    
-    .dlt a {
-        display: none;
-    }
-    /*Shipping info*/
-    
-    .form-wrapper {
-        padding: 5px 0px;
-    }
-    
-    .form-wrapper p {
-        font-size: 0.7em;
-        color: rgba(0, 0, 0, 0.6);
-        margin: 5px 0px;
-    }
-    
-    .shipping-info h1 {
-        border-bottom: 1px solid #2f4159;
-    }
-    
-    .shipping-info label {
-        display: none;
-    }
-    
-    .shipping-info input {
-        font-family: "fira-sans-condensed-2", sans-serif;
-        font-weight: 800;
-        border-radius: 10px;
-        padding: 8px;
-        margin: 5px 0px;
-        width: 200px;
-    }
-    
-    .cty-line {
-        display: flex;
-        justify-content: space-between;
-        width: 218px;
-    }
-    
-    .cty-line input {
-        width: 80px;
-    }
-    /*Payment info*/
-    
-    .pay-method>p {
-        font-size: 1em;
-        border-bottom: 1px solid #2f4159;
-    }
-    
-    .pay-wrapper {
-        padding: 10px 10px 10px 0px;
-    }
-    
-    .pay-wrapper label {
-        display: block;
-        font-size: 0.8em;
-        margin-top: 5px;
-    }
-    
-    .pay-wrapper input {
-        font-family: "fira-sans-condensed-2", sans-serif;
-        font-weight: 800;
-        letter-spacing: 1pt;
-        border-radius: 10px;
-        padding: 8px;
-        margin: 5px 0px;
-        width: 200px;
-    }
-    /*Confirm button*/
-    
-    .complete_purchase {
-        width: 300px;
-        margin: 30px auto;
-    }
-    
-    #complete_btn,
-    #shipping_btn,
-    #pay_btn {
-        font-family: "Prohibition";
-        font-weight: 500;
-        font-size: 1em;
-        letter-spacing: 2pt;
-        border: 1px solid #2f4159;
-        border-radius: 10px;
-        background-color: #2f4159;
-        color: #fff;
-        padding: 12px 10px;
-        cursor: pointer;
-    }
-    
-    #shipping_btn,
-    #pay_btn {
-        font-size: 0.8em;
-        padding: 8px;
-        width: 100px;
-    }
-    
-    #complete_btn:hover,
-    #shipping_btn:hover,
-    #pay_btn:hover {
-        background-color: #3098BF;
-        border: 1px solid #3098BF;
-    }
-    /*Media Queries*/
-    
-    @media all and (min-width: 600px) {
-        main {
-            margin: 0px 0px 100px;
-        }
-        .full-wrap {
-            display: flex;
-            justify-content: center;
-            max-width: 800px;
-            margin: 50px auto;
-        }
-        section {
-            width: 400px;
-            margin-right: 10px;
-        }
-        .order-sum {
-            position: sticky;
-            top: 100px;
-            width: 180px;
-        }
-    }
-    
-    @media all and (min-width: 700px) {
-        .full-wrap {
-            margin: 50px auto;
-        }
-        section {
-            max-width: 350px;
-            margin-right: 20px;
-        }
-        /*Order Summary*/
-        .order-sum {
-            width: 200px;
-        }
-        /*Shopping bag*/
-        .total {
-            left: 40px;
-        }
-    }
-    
-    @media all and (min-width: 800px) {
-        .full-wrap {
-            margin: 100px auto 30px;
-        }
-        section {
-            max-width: 400px;
-            padding: 20px;
-            margin: 20px 40px 40px 0px;
-        }
-        h1 {
-            font-size: 1.4em;
-            letter-spacing: 1pt;
-            text-shadow: none;
-        }
-        h2 {
-            font-size: 1.2em;
-        }
-        h3 {
-            font-weight: 900;
-            margin: 0px;
-        }
-        /*Order summary*/
-        .order-sum {
-            width: 250px;
-        }
-        /*Shopping bag*/
-        .item h2 {
-            font-size: 0.8em;
-        }
-        .title {
-            display: inline-flex;
-        }
-        .title p {
-            padding-right: 65px;
-        }
-        .size-drop {
-            position: relative;
-            left: -30px;
-        }
-        .qty input {
-            left: -20px;
-        }
-        .total {
-            left: 0px;
-        }
-        .dlt a {
-            color: #2f4159;
-            display: block;
-        }
-        .dlt a:hover {
-            color: #ff0000;
-        }
-        /*Shipping info*/
-        .shipping-info input {
-            padding: 10px;
-            margin: 10px 0px;
-            width: 200px;
-        }
-        .adr-line {
-            display: flex;
-            justify-content: space-between;
-        }
-        .adr-line input {
-            width: 170px;
-        }
-        .cty-line {
-            display: flex;
-            justify-content: space-between;
-            width: 220px;
-        }
-        .cty-line input {
-            width: 80px;
-        }
-        .form-wrapper p {
-            margin: -5px 0px 10px;
-        }
-        /*Payment info*/
-        .pay-method>p {
-            font-size: 1.4em;
-        }
-        .pay-wrapper label {
-            display: block;
-            font-size: 0.9em;
-            margin-top: 10px;
-        }
-        .pay-wrapper input {
-            border-radius: 10px;
-            padding: 10px;
-            margin: 5px 0px;
-        }
-        .pay-wrapper .confirm_btn {
-            margin-top: 20px;
-        }
-    }
-    
-    @media all and (min-width: 1200px) {
-        section {
-            padding: 40px;
-            margin: 20px 60px 60px 0px;
-        }
-        .order-sum {
-            width: 300px;
-        }
-    }
+      h1,
+      h2 {
+          font-size: 1em;
+          letter-spacing: 1pt;
+          text-shadow: none;
+      }
+      
+      h3 {
+          font-weight: 900;
+          margin: 0px;
+      }
+      
+      p {
+          font-size: 0.9em;
+          margin: 0px;
+      }
+      
+      section {
+          color: #2f4159;
+          background-color: #fff;
+          box-shadow: 5px +5px 5px 0px rgba(0, 0, 0, 0.2);
+          padding: 10px;
+          margin: 20px 0px;
+          max-width: 300px;
+      }
+      
+      select,
+      input {
+          border: 1px solid #2f4159;
+          border-radius: 5px;
+      }
+      
+      select:focus,
+      input:focus {
+          border: 2px solid #2f4159;
+      }
+      
+      main {
+          margin: 10px auto;
+      }
+      /*Order summary*/
+      
+      .orderSum {
+          max-width: 300px;
+          margin: 20px 0px;
+      }
+      
+      .orderSum h1 {
+          border-bottom: 1px solid #2f4159;
+      }
+      
+      .products,
+      .shpCost,
+      .sumTotal {
+          display: flex;
+          justify-content: space-between;
+      }
+      
+      .products p,
+      .shpCost p {
+          margin: 5px 0px;
+      }
+      /*Shopping bag*/
+      
+      .title {
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid #2f4159;
+      }
+      
+      .item {
+          text-align: center;
+      }
+      
+      .item img {
+          width: 40px;
+      }
+      
+      .item h2 {
+          font-family: "fira-sans-condensed-2", sans-serif;
+          font-size: 0.7em;
+          letter-spacing: 1pt;
+      }
+      
+      .item-1,
+      .item-2 {
+          display: flex;
+          justify-content: space-between;
+          margin: 10px 0px;
+          border-bottom: 1px solid rgb(48, 66, 90, 0.5);
+      }
+      
+      .item-1 label,
+      .item-1 p,
+      .item-2 label,
+      .item-2 p {
+          display: none;
+      }
+      
+      .sizeDrop {
+          position: relative;
+          left: -15px;
+      }
+      
+      .sizeDrop select {
+          text-align: center;
+      }
+      
+      .qty input {
+          width: 20px;
+          text-align: center;
+          position: relative;
+          left: 10px;
+      }
+      
+      .total {
+          position: relative;
+          left: 26px;
+      }
+      
+      .delete a {
+          display: none;
+      }
+      /*Shipping info*/
+      
+      .shippingInfo h1 {
+          border-bottom: 1px solid #2f4159;
+      }
+      
+      .formWrapper {
+          padding: 5px 0px;
+      }
+      
+      .formWrapper p {
+          font-size: 0.7em;
+          color: rgba(0, 0, 0, 0.6);
+          margin: 5px 0px;
+      }
+      
+      .shippingInfo label {
+          display: none;
+      }
+      
+      .shippingInfo input {
+          font-family: "fira-sans-condensed-2", sans-serif;
+          font-weight: 800;
+          border-radius: 10px;
+          padding: 8px;
+          margin: 5px 0px;
+          width: 200px;
+      }
+      
+      .ctyLine {
+          display: flex;
+          justify-content: space-between;
+          width: 218px;
+      }
+      
+      .ctyLine input {
+          width: 80px;
+      }
+      /*Payment info*/
+      
+      .payMethod>p {
+          font-size: 1em;
+          border-bottom: 1px solid #2f4159;
+      }
+      
+      .payWrapper {
+          padding: 10px 10px 10px 0px;
+      }
+      
+      .payWrapper label {
+          display: block;
+          font-size: 0.8em;
+          margin-top: 5px;
+      }
+      
+      .payWrapper input {
+          font-family: "fira-sans-condensed-2", sans-serif;
+          font-weight: 800;
+          letter-spacing: 1pt;
+          border-radius: 10px;
+          padding: 8px;
+          margin: 5px 0px;
+          width: 200px;
+      }
+      /*Buttons*/
+      
+      .completePurchase {
+          width: 300px;
+          margin: 30px auto;
+      }
+      
+      #completeBtn,
+      #shippingBtn,
+      #payBtn {
+          font-family: "Prohibition";
+          font-weight: 500;
+          font-size: 1em;
+          letter-spacing: 2pt;
+          border: 1px solid #2f4159;
+          border-radius: 10px;
+          background-color: #2f4159;
+          color: #fff;
+          padding: 12px 10px;
+          cursor: pointer;
+      }
+      
+      #shippingBtn,
+      #payBtn {
+          font-size: 0.8em;
+          padding: 8px;
+          width: 100px;
+      }
+      
+      #completeBtn:hover,
+      #shippingBtn:hover,
+      #payBtn:hover {
+          background-color: #3098BF;
+          border: 1px solid #3098BF;
+      }
+      /* Validation */
+      
+      .validationContainer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 100px auto;
+          min-width: 300px;
+      }
+      
+      .successCard {
+          background-color: rgba(255, 255, 255, 0.9);
+          padding: 40px 50px 60px;
+          margin: 0px 10px;
+      }
+      
+      .successCard h1 {
+          font-size: 2em;
+          letter-spacing: 0pt;
+          text-shadow: none;
+          text-align: center;
+          padding-left: 5px;
+      }
+      
+      .successCard p {
+          text-align: center;
+          padding: 0px;
+          margin: 0px;
+      }
+      
+      .fa-check {
+          display: flex;
+          font-size: 2.5em;
+          color: #288f28;
+          justify-content: center;
+      }
+      
+      .exploreBtn {
+          margin: 50px;
+      }
+      
+      .exploreBtn a {
+          font-family: "Prohibition";
+          font-weight: 500;
+          font-size: 1em;
+          letter-spacing: 1pt;
+          border: 1px solid #2f4159;
+          border-radius: 10px;
+          background-color: #2f4159;
+          color: #fff;
+          padding: 12px 15px;
+          cursor: pointer;
+      }
+      
+      .exploreBtn a:hover {
+          background-color: #3098BF;
+          border: 1px solid #3098BF;
+      }
+      /*Media Queries*/
+      
+      @media all and (min-width: 600px) {
+          main {
+              margin: 0px 0px 100px;
+          }
+          .fullWrap {
+              display: flex;
+              justify-content: center;
+              max-width: 800px;
+              margin: 50px auto;
+          }
+          section {
+              width: 400px;
+              margin-right: 10px;
+          }
+          .orderSum {
+              position: sticky;
+              top: 100px;
+              width: 180px;
+          }
+      }
+      
+      @media all and (min-width: 700px) {
+          .fullWrap {
+              margin: 50px auto;
+          }
+          section {
+              max-width: 350px;
+              margin-right: 20px;
+          }
+          /*Order Summary*/
+          .orderSum {
+              width: 200px;
+          }
+          /*Shopping bag*/
+          .total {
+              left: 40px;
+          }
+      }
+      
+      @media all and (min-width: 800px) {
+          .fullWrap {
+              margin: 100px auto 30px;
+          }
+          section {
+              max-width: 400px;
+              padding: 20px;
+              margin: 20px 40px 40px 0px;
+          }
+          h1 {
+              font-size: 1.4em;
+              letter-spacing: 1pt;
+              text-shadow: none;
+          }
+          h2 {
+              font-size: 1.2em;
+          }
+          h3 {
+              font-weight: 900;
+              margin: 0px;
+          }
+          /*Order summary*/
+          .orderSum {
+              width: 250px;
+          }
+          /*Shopping bag*/
+          .item h2 {
+              font-size: 0.8em;
+          }
+          .title {
+              display: inline-flex;
+          }
+          .title p {
+              padding-right: 65px;
+          }
+          .sizeDrop {
+              position: relative;
+              left: -30px;
+          }
+          .qty input {
+              left: -20px;
+          }
+          .total {
+              left: 0px;
+          }
+          .delete a {
+              color: #2f4159;
+              display: block;
+          }
+          .delete a:hover {
+              color: #ff0000;
+          }
+          /*Shipping info*/
+          .shippingInfo input {
+              padding: 10px;
+              margin: 10px 0px;
+              width: 200px;
+          }
+          .adrLine {
+              display: flex;
+              justify-content: space-between;
+          }
+          .adrLine input {
+              width: 170px;
+          }
+          .ctyLine {
+              display: flex;
+              justify-content: space-between;
+              width: 220px;
+          }
+          .ctyLine input {
+              width: 80px;
+          }
+          .formWrapper p {
+              margin: -5px 0px 10px;
+          }
+          /*Payment info*/
+          .payMethod>p {
+              font-size: 1.4em;
+          }
+          .payWrapper label {
+              display: block;
+              font-size: 0.9em;
+              margin-top: 10px;
+          }
+          .payWrapper input {
+              border-radius: 10px;
+              padding: 10px;
+              margin: 5px 0px;
+          }
+          .payBtn {
+              margin-top: 20px;
+          }
+          /* Validation */
+          .validationContainer {
+              margin: 200px auto;
+          }
+      }
+      
+      @media all and (min-width: 1200px) {
+          section {
+              padding: 40px;
+              margin: 20px 60px 60px 0px;
+          }
+          .orderSum {
+              width: 300px;
+          }
+      }

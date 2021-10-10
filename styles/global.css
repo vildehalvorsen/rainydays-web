@@ -105,7 +105,7 @@ nav li:hover {
 
 /*Home page*/
 
-.headertop {
+.headerTop {
     background-image: url(/images/Home-background-resized.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -116,45 +116,99 @@ nav li:hover {
     position: relative;
 }
 
-.headertop_content img {
+.headerTopContent img {
     display: none;
 }
 
+
+/*Info*/
+
 .info {
+    text-align: center;
     max-width: 800px;
     padding: 10px 20px 40px;
-    text-align: center;
-    border-bottom: 2px dotted #2F4159;
 }
 
 .info p {
     font-size: 1.1em;
     max-width: 300px;
-    margin: auto;
+    margin: 0px auto;
 }
+
+
+/*Jackets*/
+
+.featured {
+    display: flex;
+    max-width: 350px;
+    overflow-x: scroll;
+    margin: 60px auto 50px;
+}
+
+.jackets img {
+    width: 190px;
+    border: 1px solid #2f4159;
+    margin-right: 20px;
+}
+
+
+/*Button*/
+
+.exploreBtnTop,
+.exploreBtnBottom {
+    width: 110px;
+    margin: 0px auto;
+}
+
+.exploreBtnTop a,
+.exploreBtnBottom a {
+    font-family: "Prohibition";
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: 2pt;
+    border: 1px solid #2f4159;
+    border-radius: 10px;
+    background-color: #2f4159;
+    color: #fff;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.exploreBtnTop a:hover,
+.exploreBtnBottom a:hover {
+    background-color: #3098BF;
+    border: 1px solid #3098BF;
+}
+
+.exploreBtnBottom a {
+    display: none;
+}
+
+
+/*Reviews*/
 
 .reviews {
     text-align: center;
 }
 
-.reviews_content {
+.reviewsContent {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 }
 
-.reviews_images {
+.reviewsImages {
     border-radius: 50px;
     width: 200px;
     margin: 20px;
 }
 
-.reviews_content p {
+.reviewsContent p {
     max-width: 60%;
     margin: auto;
     padding-bottom: 0px;
 }
 
-.review_section {
+.reviewSection {
     padding-bottom: 40px;
 }
 
@@ -173,6 +227,11 @@ nav li:hover {
     nav li {
         padding: 10px 10px;
     }
+    /*Jackets*/
+    .featured {
+        max-width: 390px;
+    }
+    /*Reviews*/
     .reviews {
         padding-top: 20px;
     }
@@ -185,22 +244,27 @@ nav li:hover {
     nav li {
         padding: 10px 30px;
     }
-    .headertop_content img {
+    .headerTopContent img {
         display: flex;
         position: absolute;
         width: 35%;
         top: 25%;
         left: 9%;
     }
+    /*Info*/
     .info {
         padding: 0px 0px 50px;
-        margin: 50px auto;
+        margin: 50px auto 0px;
     }
     .info h1 {
         font-size: 3em;
     }
     .info p {
         max-width: 500px;
+    }
+    /*Jackets*/
+    .featured {
+        max-width: 530px;
     }
 }
 
@@ -228,21 +292,21 @@ nav li:hover {
         background-color: rgba(173, 216, 230, 0.377);
         padding: 22px 18px 20px;
     }
-    .headertop {
+    .headerTop {
         background-position-x: left;
         background-position-y: top;
         min-height: 80vh;
         border-bottom: 1px solid #2F4159;
     }
-    .headertop_content img {
+    .headerTopContent img {
         position: absolute;
         width: 35%;
         top: 25%;
         left: 9%;
     }
+    /*Info*/
     .info {
         padding: 50px 0px;
-        margin: 50px auto;
         border-bottom: none;
     }
     .info p {
@@ -250,20 +314,56 @@ nav li:hover {
         padding: 0px 30px;
         max-width: 800px;
     }
-    .reviews h2 {
+    /*Jackets*/
+    .featured {
+        max-width: 770px;
+        margin: 0px auto 50px;
+    }
+    .jackets img {
+        width: 230px;
+    }
+    /*Button*/
+    .exploreBtnTop {
         display: none;
     }
-    .reviews_content {
+    .exploreBtnBottom {
+        width: 157px;
+    }
+    .exploreBtnBottom a {
+        display: initial;
+        font-size: 1.5em;
+        padding: 15px 30px;
+    }
+    /*Reviews*/
+    .reviews {
+        margin: 200px auto 100px;
+        border-top: 1px solid #2F4159;
+    }
+    .reviewsContent {
         grid-template-columns: repeat(3, 1fr);
     }
-    .reviews_images {
+    .reviewsImages {
         width: 50%;
         max-width: 250px;
     }
-    .reviews_content p {
+    .reviewsContent p {
         max-width: 60%;
     }
-    .review_section {
+    .reviewSection {
         margin-bottom: 50px;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    /*Jackets*/
+    .featured {
+        max-width: 900px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    /*Jackets*/
+    .featured {
+        max-width: 1150px;
     }
 }

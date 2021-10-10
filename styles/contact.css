@@ -126,7 +126,7 @@ textarea:focus {
 
 .cardWrap {
     position: absolute;
-    top: 200px;
+    top: 210px;
 }
 
 .cardWrap h1 {
@@ -146,7 +146,7 @@ textarea:focus {
 
 .successCard {
     background-color: #ffffff;
-    padding: 60px 50px 60px;
+    padding: 50px 50px 80px;
     width: 300px;
     margin: 0px auto;
 }
@@ -240,14 +240,14 @@ textarea:focus {
     }
     /*Validation*/
     .cardWrap {
-        top: 95px;
+        top: 110px;
         width: 500px;
     }
     .cardWrap p {
         font-size: 1.1em;
     }
     .successCard {
-        padding: 200px 50px 200px;
+        padding: 190px 50px 190px;
     }
 }
 
@@ -263,6 +263,6 @@ textarea:focus {
     }
     /*Validation*/
     .cardWrap {
-        top: 110px;
+        top: 125px;
     }
 }
