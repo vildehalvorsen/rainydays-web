@@ -17,6 +17,15 @@
     }
     /*Jacket cards*/
     
+    .getJackets {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        margin: 50px auto;
+        max-width: 250px;
+    }
+    
     h3 {
         font-family: "Prohibition", "fira-sans-condensed-2", "fira-sans-compressed-2", "ropa-soft-pro";
         font-size: 1.5em;
@@ -26,13 +35,10 @@
     }
     
     p {
-        font-size: 0.7em;
+        font-family: "fira-sans-condensed-2", sans-serif;
+        font-size: 0.8em;
+        color: #000000;
         margin: 0px;
-    }
-    
-    img {
-        width: 180.5px;
-        border: 1px solid #2f4159;
     }
     
     .jackets {
@@ -45,6 +51,11 @@
     
     .jackets:hover {
         transform: scale(1.05);
+    }
+    
+    img {
+        width: 180.5px;
+        border: 1px solid #2f4159;
     }
     
     .tag {
@@ -60,14 +71,6 @@
         font-weight: 900;
         text-align: right;
         padding: 5px;
-    }
-    
-    .featured {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 50px auto;
-        max-width: 250px;
     }
     /*Media Queries*/
     
@@ -93,7 +96,7 @@
         .jackets {
             max-width: 201px;
         }
-        .featured {
+        .getJackets {
             margin: 90px auto;
             max-width: 600px;
         }
@@ -120,7 +123,7 @@
             max-width: 302px;
             margin: 0px 50px 70px 40px;
         }
-        .featured {
+        .getJackets {
             max-width: 1300px;
         }
     }
