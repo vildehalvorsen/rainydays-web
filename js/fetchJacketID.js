@@ -31,14 +31,14 @@ function createJacketHtml(jacket) {
     headMetaText.innerHTML += `<meta name="description" content="${jacket.name} - ${jacket.description}">`;
 
     jacketImg.innerHTML = `<div class="mainImg">
-                                <img src="${jacket.images[0].src}" alt="${jacket.short_description}">
+                                <img src="${jacket.images[0].src}" alt="${jacket.images[0].alt}">
                             </div>
                             <div class="subImg">
                                 <div class="sub">
-                                    <img src="${jacket.images[0].src}" alt="${jacket.short_description}">
+                                    <img src="${jacket.images[0].src}" alt="${jacket.images[0].alt}">
                                 </div>
                                 <div class="sub">
-                                    <img src="${jacket.images[0].src}" alt="${jacket.short_description}">
+                                    <img src="${jacket.images[0].src}" alt="${jacket.images[0].alt}">
                                 </div>
                             </div>`;
 
