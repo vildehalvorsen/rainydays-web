@@ -4,7 +4,7 @@ const jacketID = params.get("id")
 
 console.log(jacketID);
 
-const url = "https://vildehalvorsen.one/rainydays/wp-json/wc/store/products/" + jacketID;
+const url = "https://vildehalvorsen.one/wp-json/wc/store/products/" + jacketID;
 const jacketContainer = document.querySelector(".jacketContainer");
 const jacketDescription = document.querySelector(".jacketDescription");
 const jacketImg = document.querySelector(".jackets");

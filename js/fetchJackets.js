@@ -23,7 +23,7 @@ getFeaturedJackets(firstUrl);
 
 /** Jackets page */
 
-const url = "https://vildehalvorsen.one/rainydays/wp-json/wc/store/products";
+const url = "https://vildehalvorsen.one/wp-json/wc/store/products";
 const resultsContainer = document.querySelector(".getJackets");
 
 async function getJackets(url) {
