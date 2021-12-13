@@ -1,189 +1,130 @@
-body {
-    background-image: url(/images/about-background_opacity.jpg);
-    min-height: 100vh;
-}
-
-h1 {
-    background-color: rgba(255, 255, 255, 0.9);
-    text-align: center;
-}
-
-h2 {
-    font-size: 1.5em;
-    margin: 20px;
-}
-
-h3 {
-    font-weight: 900;
-}
-
-.aboutContent {
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 10px 20px;
-}
-
-.aboutContent img {
-    width: 150px;
-    padding: 20px;
-}
-
-.aboutContent p {
-    font-size: 0.9em;
-}
-
-.aboutInfo {
-    margin: 30px 0px;
-    overflow-y: scroll;
-    height: 300px;
-}
-
-.aboutStaff {
-    background-color: rgba(255, 255, 255, 0.7);
-    margin-top: 10px;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.aboutStaff h2 {
-    margin-top: 40px
-}
-
-.aboutStaff h3,
-p {
-    margin: 15px;
-}
-
-.aboutStaff img {
-    border-radius: 50%;
-    width: 50%;
-    max-width: 180px;
-    margin-top: 30px;
-}
-
-
-/*Media Queries*/
-
-@media all and (min-width: 700px) {
-    .staffWrap {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 500px;
-        margin: 50px 0px;
-    }
-    .person {
-        margin-bottom: 30px;
-    }
-    .aboutStaff img {
-        width: 65%;
-        max-width: 200px;
-        margin-top: 0px;
-    }
-}
-
-@media all and (min-width: 800px) {
-    body {
-        min-height: 340vh;
-    }
-    h1 {
-        display: inline-block;
-        font-size: 3em;
-        padding: 5px 20px;
-    }
-    h2 {
-        font-size: 2em;
-    }
-    .allContent {
-        position: relative;
-        top: 100px;
-        width: 70%;
-        margin: 0px auto;
-    }
-    .contentWrap {
-        background-color: rgba(255, 255, 255, 0.9);
-        text-align: center;
-    }
-    .aboutContent {
-        background-color: rgba(255, 255, 255, 0);
-        display: inline-flex;
-        flex-direction: column;
-        padding: 0px 20px;
-    }
-    .aboutContent p {
-        font-size: 1em;
-        max-width: 400px;
-        padding: 10px 0px;
-    }
-    .aboutInfo {
-        overflow-y: visible;
-        height: auto;
-    }
-    .staffWrap {
-        width: 220px;
-        margin: 0px;
-        padding: 50px;
-    }
-    .aboutStaff {
-        background-color: rgba(255, 255, 255, 0);
-        margin-top: 0px;
-        padding-bottom: 0px;
-    }
-    .aboutStaff img {
-        width: 55%;
-        max-width: 280px;
-        margin-top: 0px;
-    }
-    .person {
-        margin-bottom: 20px;
-    }
-}
-
-@media all and (min-width: 1000px) {
-    body {
-        min-height: 180vh;
-    }
-    .allContent {
-        width: 80%;
-        margin: 0px auto;
-    }
-    .contentWrap {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 850px;
-    }
-    .aboutContent {
-        display: flex;
-        text-align: left;
-        padding: 20px 30px;
-    }
-    .aboutContent h2 {
-        padding: 0px;
-        margin: 20px 0px;
-    }
-    .aboutInfo {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 0px;
-    }
-    .aboutInfo p {
-        padding: 0px;
-        margin: 15px 0px;
-        width: 400px;
-    }
-    .aboutStaff {
-        max-width: 400px;
-    }
-    .aboutStaff img {
-        width: 120px;
-    }
-    .person {
-        display: flex;
-        align-items: center;
-        text-align: left;
-        margin-bottom: 40px;
-    }
-}
+        body {
+            background-image: url(/images/about-background_opacity.jpg);
+        }
+        
+        h1 {
+            background-color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 1.5em;
+        }
+        
+        h3 {
+            font-weight: 900;
+        }
+        
+        .aboutContent,
+        .aboutStaff {
+            background-color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            padding: 10px 0px;
+            margin: 50px 0px;
+        }
+        /* About us */
+        
+        .aboutInfo {
+            width: 320px;
+            margin: 0px auto;
+        }
+        
+        .aboutContent p {
+            font-size: 0.9em;
+        }
+        
+        .aboutContent img {
+            width: 150px;
+            padding: 20px;
+        }
+        /* Staff */
+        
+        .aboutStaff {
+            margin-bottom: 100px;
+        }
+        
+        .aboutStaff img {
+            border-radius: 50%;
+            width: 130px;
+            margin-top: 30px;
+        }
+        
+        .aboutStaff h3,
+        .aboutStaff p {
+            margin: 5px 0px;
+        }
+        /*Media Queries*/
+        
+        @media all and (min-width: 400px) {
+            /* About us */
+            .aboutInfo {
+                width: 360px;
+            }
+        }
+        
+        @media all and (min-width: 500px) {
+            h1 {
+                padding: 20px 0px;
+                margin: 50px 0px;
+            }
+            /* About us */
+            .aboutInfo {
+                width: 420px;
+            }
+        }
+        
+        @media all and (min-width: 600px) {
+            h2 {
+                font-size: 2em;
+            }
+            /* About us */
+            .aboutInfo {
+                width: 520px;
+            }
+            .aboutContent p {
+                font-size: 1em;
+            }
+        }
+        
+        @media all and (min-width: 800px) {
+            body {
+                background-image: url(/images/background-pattern-resized.jpg);
+            }
+            h1 {
+                background-color: rgba(255, 255, 255, 0);
+            }
+            .aboutContent,
+            .aboutStaff {
+                background-color: rgba(255, 255, 255, 0);
+                width: 750px;
+                margin: 100px auto;
+            }
+        }
+        
+        @media all and (min-width: 1200px) {
+            .contentWrap {
+                display: flex;
+                max-width: 1300px;
+                margin: 0px auto;
+            }
+            /*About us*/
+            .aboutContent {
+                width: 500px;
+                margin: 75px auto;
+            }
+            .aboutContent h2 {
+                margin-bottom: 60px;
+            }
+            .aboutContent p {
+                font-size: 1.1em;
+            }
+            /*Staff*/
+            .aboutStaff {
+                width: 300px;
+                margin: 75px auto;
+            }
+            .aboutStaff img {
+                width: 100px;
+                margin-top: 30px;
+            }
+        }
