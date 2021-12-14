@@ -132,6 +132,33 @@ nav li:hover {
 }
 
 
+/* Loader */
+
+.fa-tint {
+    font-size: 2em;
+    color: #2F4159;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    animation: loader 0.7s infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
 /*Media queries*/
 
 @media all and (min-width: 400px) {

@@ -31,6 +31,8 @@ async function getJackets(url) {
     const response = await fetch(url)
     const products = await response.json();
 
+    resultsContainer.innerHTML = "";
+
     products.forEach(function(jacket) {
         resultsContainer.innerHTML +=
             `<div class="jackets">
