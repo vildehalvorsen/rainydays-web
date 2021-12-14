@@ -7,7 +7,7 @@ body {
     background-image: url(/images/background-pattern-resized.jpg);
     background-size: cover;
     display: grid;
-    grid-template-rows: 1fr auto 1fr;
+    grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     margin: 0px;
 }
@@ -48,6 +48,7 @@ footer {
 footer {
     text-align: center;
     padding: 10px;
+    z-index: 1000;
 }
 
 
@@ -110,7 +111,8 @@ nav li:hover {
     margin: 0px auto;
 }
 
-.globalButton a {
+.globalButton a,
+.globalButton button {
     font-family: "Prohibition";
     font-weight: 500;
     font-size: 1em;
@@ -123,7 +125,8 @@ nav li:hover {
     cursor: pointer;
 }
 
-.globalButton a:hover {
+.globalButton a:hover,
+.globalButton button:hover {
     background-color: #3098BF;
     border: 1px solid #3098BF;
 }

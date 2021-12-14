@@ -187,38 +187,19 @@
       }
       /*Buttons*/
       
-      .completePurchase {
-          width: 300px;
-          margin: 30px auto;
-      }
-      
-      #completeBtn,
-      #shippingBtn,
-      #payBtn {
-          font-family: "Prohibition";
-          font-weight: 500;
-          font-size: 1em;
-          letter-spacing: 2pt;
-          border: 1px solid #2f4159;
-          border-radius: 10px;
-          background-color: #2f4159;
-          color: #fff;
-          padding: 12px 10px;
-          cursor: pointer;
-      }
-      
       #shippingBtn,
       #payBtn {
           font-size: 0.8em;
           padding: 8px;
           width: 100px;
+          margin: 10px auto 0px;
       }
       
-      #completeBtn:hover,
-      #shippingBtn:hover,
-      #payBtn:hover {
-          background-color: #3098BF;
-          border: 1px solid #3098BF;
+      .complete {
+          text-align: center;
+          font-size: 0.8em;
+          width: 300px;
+          margin: 50px auto;
       }
       /* Validation */
       
@@ -317,6 +298,11 @@
           .total {
               left: 40px;
           }
+          /*Button*/
+          .complete {
+              font-size: 1em;
+              width: 400px;
+          }
       }
       
       @media all and (min-width: 800px) {
@@ -325,7 +311,7 @@
           }
           section {
               max-width: 400px;
-              padding: 20px;
+              padding: 20px 20px 10px;
               margin: 20px 40px 40px 0px;
           }
           h1 {
@@ -420,7 +406,6 @@
       
       @media all and (min-width: 1200px) {
           section {
-              padding: 40px;
               margin: 20px 60px 60px 0px;
           }
           .orderSum {

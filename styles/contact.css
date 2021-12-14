@@ -9,24 +9,16 @@ main {
 h1 {
     font-size: 1.6em;
     text-align: center;
-    margin: 50px 0px 10px 0px;
-    max-width: 375px;
-    display: flex;
-    justify-content: center;
 }
 
-h2 {
-    font-family: "fira-sans-compressed-2", sans-serif;
-    font-weight: 700;
-    text-transform: none;
+.info p {
     text-align: center;
-    font-size: 0.9em;
-    letter-spacing: 1pt;
+    color: #2F4159;
 }
 
 .contactContainer {
     max-width: 400px;
-    margin: 0px auto 10px auto;
+    margin: 100px auto;
 }
 
 
@@ -51,27 +43,18 @@ textarea {
     font-weight: 600;
     border: 1px solid #2F4159;
     border-radius: 10px;
-    margin: 0px 10px 10px 0px;
-    padding: 8px;
+    margin: 0px 0px 10px;
+    padding: 10px;
     width: 200px;
 }
 
 textarea {
     height: 90px;
-    margin-bottom: 10px;
 }
 
 input:focus,
 textarea:focus {
     border: 2px solid #2f4159;
-}
-
-#firstNameCheck,
-#surNameCheck,
-#emailCheck,
-#messageCheck {
-    display: none;
-    color: green;
 }
 
 #firstNameError,
@@ -95,38 +78,26 @@ textarea:focus {
     margin: 0px;
 }
 
-.btn {
-    font-family: "Prohibition";
-    font-size: 1.1em;
-    letter-spacing: 1pt;
-    background-color: #2F4159;
-    color: #fff;
-    text-transform: uppercase;
-    border: 0px;
-    border-radius: 5px;
-    padding: 7px 0px;
-    margin: 5px;
-    width: 110px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #3098BF;
-    border-color: #3098BF;
-}
-
-.submitButton {
+.globalButton {
     display: flex;
     justify-content: right;
     width: 216px;
+}
+
+.globalButton button {
+    padding: 10px 20px;
 }
 
 
 /*Validation*/
 
 .cardWrap {
-    position: absolute;
-    top: 210px;
+    position: fixed;
+    background-color: #ffffff;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
 }
 
 .cardWrap h1 {
@@ -145,10 +116,11 @@ textarea:focus {
 }
 
 .successCard {
-    background-color: #ffffff;
-    padding: 50px 50px 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 300px;
-    margin: 0px auto;
 }
 
 .fa-check {
@@ -166,7 +138,7 @@ textarea:focus {
 
 .exploreBtn a {
     background-color: #2f4159;
-    padding: 5px 30px;
+    padding: 8px 30px;
     border-color: 1px solid #2f4159;
     border-radius: 5px;
     font-family: "Prohibition";
@@ -199,9 +171,9 @@ textarea:focus {
     h1 {
         font-size: 2em;
         max-width: 400px;
-        margin: 0px auto 20px;
+        margin: 20px auto;
     }
-    h2 {
+    .info p {
         font-size: 1.3em;
     }
     form {
@@ -215,7 +187,6 @@ textarea:focus {
     input,
     textarea {
         margin: 0px 10px 20px 0px;
-        padding: 10px;
         width: 250px;
     }
     textarea {
@@ -225,44 +196,26 @@ textarea:focus {
     #surNameError,
     #emailError,
     #messageError {
-        padding: 0px;
-        margin: -10px 0px 20px;
+        margin-top: -15px;
         width: 200px;
     }
     #required {
         font-size: 0.8em;
     }
-    .btn {
-        padding: 8px 0px;
-    }
-    .submitButton {
-        width: 273px;
+    .globalButton {
+        width: 265px;
     }
     /*Validation*/
-    .cardWrap {
-        top: 110px;
-        width: 500px;
+    .successCard {
+        width: 450px;
     }
     .cardWrap p {
         font-size: 1.1em;
-    }
-    .successCard {
-        padding: 190px 50px 190px;
     }
 }
 
 @media all and (min-width: 800px) {
     .contactContainer {
-        margin: 50px;
-    }
-    #firstNameError,
-    #surNameError,
-    #emailError,
-    #messageError {
-        margin: -15px 0px 10px;
-    }
-    /*Validation*/
-    .cardWrap {
-        top: 125px;
+        max-width: 700px;
     }
 }

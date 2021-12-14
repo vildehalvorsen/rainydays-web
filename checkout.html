@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Checkout" />
@@ -11,23 +10,6 @@
     <title>RainyDays | Checkout</title>
     <link href="/styles/global.css" rel="stylesheet" />
     <link href="/styles/checkout.css" rel="stylesheet" />
-    <!-- Hotjar Tracking Code for https://boring-dubinsky-016e16.netlify.app/ -->
-    <script>
-        (function(h, o, t, j, a, r) {
-            h.hj = h.hj || function() {
-                (h.hj.q = h.hj.q || []).push(arguments)
-            };
-            h._hjSettings = {
-                hjid: 2614363,
-                hjsv: 6
-            };
-            a = o.getElementsByTagName('head')[0];
-            r = o.createElement('script');
-            r.async = 1;
-            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-    </script>
 </head>
 
 <body>
@@ -156,8 +138,8 @@
                                 <input type="email" id="email" name="email" required placeholder="E-mail *">
                             </div>
                             <p>*Required fields</p>
-                            <div>
-                                <input type="submit" value="Confirm" id="shippingBtn">
+                            <div class="globalButton">
+                                <button id="shippingBtn">Confirm</button>
                             </div>
                         </form>
                     </div>
@@ -183,8 +165,8 @@
                                 <label for="cvv">CVV</label>
                                 <input type="text" id="cvv" name="cvv" placeholder="123" required>
                             </div>
-                            <div>
-                                <input type="submit" value="Confirm" id="payBtn">
+                            <div class="globalButton">
+                                <button id="payBtn">Confirm</button>
                             </div>
                         </form>
                     </div>
@@ -210,13 +192,12 @@
                 </section>
             </div>
         </div>
-        <div class="completePurchase">
-            <input type="submit" value="confirm and complete purchase" id="completeBtn" />
+        <div class="globalButton complete">
+            <button id="completeBtn">Confirm and complete purchase</button>
         </div>
-
     </main>
     <footer>Copyright &copy;</footer>
-    <script src="/js/checkOutSuccess.js"></script>
+    <script src="/js/checkOutSuccess.js "></script>
 </body>
 
 </html>
