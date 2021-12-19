@@ -1,7 +1,7 @@
 /*Global styling*/
 
 body {
-    font-family: fira-sans-condensed-2, sans-serif;
+    font-family: "fira-sans-condensed-2", sans-serif;
     font-weight: 800;
     font-style: normal;
     background-image: url(/images/background-pattern-resized.jpg);
@@ -52,7 +52,7 @@ footer {
 }
 
 p {
-    line-height: 13pt;
+    line-height: 14pt;
 }
 
 

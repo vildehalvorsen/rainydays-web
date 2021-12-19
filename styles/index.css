@@ -56,7 +56,7 @@
 /*Reviews*/
 
 .reviews {
-    margin: 100px 0px;
+    margin: 150px 0px 100px;
 }
 
 .reviews h2 {
@@ -99,10 +99,6 @@
     /*Jackets*/
     .featuredJackets {
         max-width: 390px;
-    }
-    /*Reviews*/
-    .reviews {
-        margin: 100px 0px;
     }
 }
 
