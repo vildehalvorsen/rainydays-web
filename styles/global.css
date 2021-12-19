@@ -1,26 +1,3 @@
-/*Fonts*/
-
-@font-face {
-    font-family: prohibition, sans-serif;
-    src: url("https://use.typekit.net/kzu1jpj.css");
-}
-
-@font-face {
-    font-family: fira-sans, sans-serif;
-    src: url("https://use.typekit.net/kzu1jpj.css");
-}
-
-@font-face {
-    font-family: ropa-soft-pro, sans-serif;
-    src: url("https://use.typekit.net/kzu1jpj.css");
-}
-
-@font-face {
-    font-family: fira-sans-condensed-2, sans-serif;
-    src: url("https://use.typekit.net/kzu1jpj.css");
-}
-
-
 /*Global styling*/
 
 body {
