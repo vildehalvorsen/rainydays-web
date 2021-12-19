@@ -42,7 +42,7 @@
     }
     
     .jackets {
-        max-width: 182px;
+        max-width: 192px;
         max-height: 428px;
         margin: 0px 30px 50px 30px;
         box-shadow: 5px +20px 5px 0px rgba(0, 0, 0, 0.2);
@@ -54,7 +54,7 @@
     }
     
     img {
-        width: 180.5px;
+        width: 190.5px;
         border: 1px solid #2f4159;
     }
     
